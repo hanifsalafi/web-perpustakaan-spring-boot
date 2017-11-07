@@ -4,13 +4,13 @@ Fitur: Mengelola Buku
        Mengedit Data Buku
 
 	@Normal
-	Skenario: Mengedit Data Member
-		Dengan Data member yang sudah tersedia di database
-		Ketika Memasukan nama member "hanif"
-		Maka respon dari sistem "Data member ditemukan"
+	Skenario: Mengedit Data Buku
+		Dengan Data buku yang sudah tersedia di database
+		Ketika Memasukan judul buku "dzufiqar"
+		Maka respon dari sistem "Data buku ditemukan"
 
         @Duplikat
-        Skenario: Mengedit Data Member
-		Dengan Data member yang sudah tersedia di database
-		Ketika Memasukan nama member "salafi"
-		Maka respon gagal dari sistem "Data member tidak ditemukan"   
+        Skenario: Mengedit Data Buku
+		Dengan Data buku yang sudah tersedia di database
+		Ketika Memasukan judul buku "ridha"
+		Maka respon gagal dari sistem "Data buku tidak ditemukan"   
