@@ -1,16 +1,16 @@
 # language: id
 
 Fitur: Mengelola Buku
-       Melihat Data Buku
+       Melihat Katalog Buku
 
 	@Normal
-	Skenario: Melihat Data Buku
-		Dengan Data buku yang sudah tersedia di database
-		Ketika Memasukan judul member "dzulfiqar"
+	Skenario: Melihat Katalog Buku
+		Dengan Data kategori buku yang sudah tersedia di database
+		Ketika Memasukan kategori buku "dzulfiqar"
 		Maka respon dari sistem "Data buku ditampilkan"
 
         @Duplikat
-        Skenario: Melihat Data Buku
-		Dengan Data buku yang sudah tersedia di database
-		Ketika Memasukan judul buku "ridha"
-		Maka respon gagal dari sistem "Data buku tidak ditemukan"   
+        Skenario: Melihat Katalog Buku
+		Dengan Data kategori buku yang sudah tersedia di database
+		Ketika Memasukan kategori buku "ridha"
+		Maka respon gagal dari sistem "Data kategori buku tidak ditemukan"   
