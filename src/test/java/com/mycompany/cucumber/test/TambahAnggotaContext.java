@@ -12,6 +12,7 @@ import cucumber.api.java.id.Dengan;
 import cucumber.api.java.id.Ketika;
 import junit.framework.Assert;
 import com.mycompany.Anggota;
+import static junit.framework.Assert.*;
 
 /**
  *
@@ -19,15 +20,15 @@ import com.mycompany.Anggota;
  */
 
 public class TambahAnggotaContext {
-    String respon,respon1;
-    
-    //---Fitur Menambahkan Data Member---  
+    String respon;
+
+    //---Fitur Menambahkan Data Member---
     @Dengan("^Data member baru yang akan dimasukan tersedia dan tidak duplikat dengan data yang telah ada di database$")
     public void Data_member_baru_yang_akan_dimasukan_tersedia_dan_tidak_duplikat_dengan_data_yang_telah_ada_di_database() throws Throwable {
         boolean expected = false;
-        //kode untuk cek ke database apakah user sudah ada
-        boolean result = false;//harusnya dari database.
-        Assert.assertEquals(expected, result);
+        //berisi code untuk mengecek user di database apakah sudah tersedia
+        boolean result = false;
+        assertEquals(expected, result);
     }
 
     @Ketika("^Memasukan data member dengan nama \"([^\"]*)\"$")
@@ -37,15 +38,13 @@ public class TambahAnggotaContext {
 
     @Maka("^respon \"([^\"]*)\"$")
     public void respon(String arg1) throws Throwable {
-        //kode untuk cek ke database apakah user sudah ada
-        Assert.assertEquals(arg1, respon);
+        assertEquals(arg1, respon);
     }
 
     @Maka("^respon gagal dengan pesan \"([^\"]*)\"$")
     public void respon_gagal_dengan_pesan(String arg1) throws Throwable {
-        //kode untuk cek ke database apakah user sudah ada
-        Assert.assertEquals(arg1, respon);
+        assertEquals(arg1, respon);
     }
 
- 
+
 }
