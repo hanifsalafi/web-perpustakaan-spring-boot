@@ -6,7 +6,7 @@ Fitur: Mengelola Buku
 	@Normal
 	Skenario: Mengembalikan Data Buku
 		Dengan Data buku yang sudah tersedia di database dan sedang dalam masa peminjaman
-                Ketika Memasukkan data buku yang dipinjam dengan judul "impal"
+                Ketika Memasukkan data buku yang dipinjam dengan judul "daa"
 		Maka respon pengembalian "Buku berhasil dikembalikan"
 
         @Gagal

@@ -10,27 +10,27 @@
     "elements": [
       {
         "line": 7,
-        "name": "Mengedit Data Member",
+        "name": "Mencari Data Member",
         "description": "",
-        "id": "mengelola-member;mengedit-data-member",
+        "id": "mengelola-member;mencari-data-member",
         "type": "scenario",
         "keyword": "Skenario",
         "steps": [
           {
             "result": {
-              "duration": 164875804,
+              "duration": 189246434,
               "status": "passed"
             },
             "line": 8,
             "name": "Data member yang sudah tersedia di database",
             "match": {
-              "location": "EditAnggotaContext.Data_member_yang_sudah_tersedia_di_database()"
+              "location": "CariAnggotaContext.Data_member_yang_sudah_tersedia_di_database()"
             },
             "keyword": "Dengan "
           },
           {
             "result": {
-              "duration": 4390536,
+              "duration": 5295140,
               "status": "passed"
             },
             "line": 9,
@@ -42,13 +42,13 @@
                   "offset": 23
                 }
               ],
-              "location": "EditAnggotaContext.Memasukan_nama_member(String)"
+              "location": "CariAnggotaContext.Memasukan_nama_member(String)"
             },
             "keyword": "Ketika "
           },
           {
             "result": {
-              "duration": 112901,
+              "duration": 101238,
               "status": "passed"
             },
             "line": 10,
@@ -60,7 +60,7 @@
                   "offset": 20
                 }
               ],
-              "location": "EditAnggotaContext.respon_dari_sistem(String)"
+              "location": "CariAnggotaContext.respon_dari_sistem(String)"
             },
             "keyword": "Maka "
           }
@@ -74,27 +74,27 @@
       },
       {
         "line": 13,
-        "name": "Mengedit Data Member",
+        "name": "Mencari Data Member",
         "description": "",
-        "id": "mengelola-member;mengedit-data-member",
+        "id": "mengelola-member;mencari-data-member",
         "type": "scenario",
         "keyword": "Skenario",
         "steps": [
           {
             "result": {
-              "duration": 51319,
+              "duration": 53184,
               "status": "passed"
             },
             "line": 14,
             "name": "Data member yang sudah tersedia di database",
             "match": {
-              "location": "EditAnggotaContext.Data_member_yang_sudah_tersedia_di_database()"
+              "location": "CariAnggotaContext.Data_member_yang_sudah_tersedia_di_database()"
             },
             "keyword": "Dengan "
           },
           {
             "result": {
-              "duration": 86775,
+              "duration": 105902,
               "status": "passed"
             },
             "line": 15,
@@ -106,13 +106,13 @@
                   "offset": 23
                 }
               ],
-              "location": "EditAnggotaContext.Memasukan_nama_member(String)"
+              "location": "CariAnggotaContext.Memasukan_nama_member(String)"
             },
             "keyword": "Ketika "
           },
           {
             "result": {
-              "duration": 183348,
+              "duration": 84443,
               "status": "passed"
             },
             "line": 16,
@@ -124,7 +124,7 @@
                   "offset": 26
                 }
               ],
-              "location": "EditAnggotaContext.respon_gagal_dari_sistem(String)"
+              "location": "CariAnggotaContext.respon_gagal_dari_sistem(String)"
             },
             "keyword": "Maka "
           }
@@ -132,16 +132,592 @@
         "tags": [
           {
             "line": 12,
-            "name": "@Duplikat"
+            "name": "@Gagal"
           }
         ]
       }
     ],
     "name": "Mengelola Member",
-    "description": "      Mengedit Data Member",
+    "description": "      Mencari Data Member",
     "id": "mengelola-member",
     "keyword": "Fitur",
-    "uri": "com/mycompany/cucumber/test/EditAnggota.feature"
+    "uri": "com/mycompany/cucumber/test/CariAnggota.feature"
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "# language: id"
+      }
+    ],
+    "line": 3,
+    "elements": [
+      {
+        "line": 7,
+        "name": "Mencari Data Buku",
+        "description": "",
+        "id": "mengelola-buku;mencari-data-buku",
+        "type": "scenario",
+        "keyword": "Skenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 116634,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Data buku yang sudah tersedia di database",
+            "match": {
+              "location": "CariBukuContext.Data_buku_yang_sudah_tersedia_di_database()"
+            },
+            "keyword": "Dengan "
+          },
+          {
+            "result": {
+              "duration": 835093,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Memasukan data buku dengan judul \"impal\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "impal",
+                  "offset": 34
+                }
+              ],
+              "location": "CariBukuContext.Memasukan_data_buku_dengan_judul(String)"
+            },
+            "keyword": "Ketika "
+          },
+          {
+            "result": {
+              "duration": 90508,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "respon pencarian \"Data buku ditemukan\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Data buku ditemukan",
+                  "offset": 18
+                }
+              ],
+              "location": "CariBukuContext.respon_pencarian(String)"
+            },
+            "keyword": "Maka "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@Normal"
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "Mencari Data Buku",
+        "description": "",
+        "id": "mengelola-buku;mencari-data-buku",
+        "type": "scenario",
+        "keyword": "Skenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 68581,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Data buku yang sudah tersedia di database",
+            "match": {
+              "location": "CariBukuContext.Data_buku_yang_sudah_tersedia_di_database()"
+            },
+            "keyword": "Dengan "
+          },
+          {
+            "result": {
+              "duration": 89107,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Memasukan data buku dengan judul \"belajar impal\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "belajar impal",
+                  "offset": 34
+                }
+              ],
+              "location": "CariBukuContext.Memasukan_data_buku_dengan_judul(String)"
+            },
+            "keyword": "Ketika "
+          },
+          {
+            "result": {
+              "duration": 94706,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "respon gagal pencarian dengan pesan \"Data buku tidak ditemukan\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Data buku tidak ditemukan",
+                  "offset": 37
+                }
+              ],
+              "location": "CariBukuContext.respon_gagal_pencarian_dengan_pesan(String)"
+            },
+            "keyword": "Maka "
+          }
+        ],
+        "tags": [
+          {
+            "line": 12,
+            "name": "@Gagal"
+          }
+        ]
+      }
+    ],
+    "name": "Mengelola Buku",
+    "description": "          Mencari Data Buku",
+    "id": "mengelola-buku",
+    "keyword": "Fitur",
+    "uri": "com/mycompany/cucumber/test/CariBuku.feature"
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "# language: id"
+      }
+    ],
+    "line": 3,
+    "elements": [
+      {
+        "line": 7,
+        "name": "Menghapus Data Buku",
+        "description": "",
+        "id": "mengelola-buku;menghapus-data-buku",
+        "type": "scenario",
+        "keyword": "Skenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 102637,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Data buku yang akan dihapus tersedia di database",
+            "match": {
+              "location": "HapusBukuContext.Data_buku_yang_akan_dihapus_tersedia_di_database()"
+            },
+            "keyword": "Dengan "
+          },
+          {
+            "result": {
+              "duration": 318642,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Memasukkan data buku yang akan dihapus dengan judul \"impal\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "impal",
+                  "offset": 53
+                }
+              ],
+              "location": "HapusBukuContext.Memasukkan_data_buku_yang_akan_dihapus_dengan_judul(String)"
+            },
+            "keyword": "Ketika "
+          },
+          {
+            "result": {
+              "duration": 116166,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "respon sukses hapus dengan pesan \"Buku Berhasil Dihapus\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Buku Berhasil Dihapus",
+                  "offset": 34
+                }
+              ],
+              "location": "HapusBukuContext.respon_sukses_hapus_dengan_pesan(String)"
+            },
+            "keyword": "Maka "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@Normal"
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "Menghapus Data Buku",
+        "description": "",
+        "id": "mengelola-buku;menghapus-data-buku",
+        "type": "scenario",
+        "keyword": "Skenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 56450,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Data buku yang akan dihapus tersedia di database",
+            "match": {
+              "location": "HapusBukuContext.Data_buku_yang_akan_dihapus_tersedia_di_database()"
+            },
+            "keyword": "Dengan "
+          },
+          {
+            "result": {
+              "duration": 85376,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Memasukkan data buku yang akan dihapus dengan judul \"belajar impal\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "belajar impal",
+                  "offset": 53
+                }
+              ],
+              "location": "HapusBukuContext.Memasukkan_data_buku_yang_akan_dihapus_dengan_judul(String)"
+            },
+            "keyword": "Ketika "
+          },
+          {
+            "result": {
+              "duration": 90974,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "respon gagal hapus dengan pesan \"Buku Tidak Ditemukan\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Buku Tidak Ditemukan",
+                  "offset": 33
+                }
+              ],
+              "location": "HapusBukuContext.respon_gagal_hapus_dengan_pesan(String)"
+            },
+            "keyword": "Maka "
+          }
+        ],
+        "tags": [
+          {
+            "line": 12,
+            "name": "@Gagal"
+          }
+        ]
+      }
+    ],
+    "name": "Mengelola Buku",
+    "description": "          Menghapus Data Buku",
+    "id": "mengelola-buku",
+    "keyword": "Fitur",
+    "uri": "com/mycompany/cucumber/test/HapusBuku.feature"
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "# language: id"
+      }
+    ],
+    "line": 3,
+    "elements": [
+      {
+        "line": 7,
+        "name": "Lihat Katalog",
+        "description": "",
+        "id": "mengelola-buku;lihat-katalog",
+        "type": "scenario",
+        "keyword": "Skenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 91440,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Data buku beserta katalognya yang sudah tersedia di database",
+            "match": {
+              "location": "LihatKatalogContext.Data_buku_beserta_katalognya_yang_sudah_tersedia_di_database()"
+            },
+            "keyword": "Dengan "
+          },
+          {
+            "result": {
+              "duration": 125964,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Memasukan Katalog buku \"Edukasi\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Edukasi",
+                  "offset": 24
+                }
+              ],
+              "location": "LihatKatalogContext.Memasukkan_Katalog_buku(String)"
+            },
+            "keyword": "Ketika "
+          },
+          {
+            "result": {
+              "duration": 153489,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "respon yang akan ditampilkan \"Buku Ditemukan\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Buku Ditemukan",
+                  "offset": 30
+                }
+              ],
+              "location": "LihatKatalogContext.respon_yang_akan_ditampilkan(String)"
+            },
+            "keyword": "Maka "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@Normal"
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "Lihat Katalog",
+        "description": "",
+        "id": "mengelola-buku;lihat-katalog",
+        "type": "scenario",
+        "keyword": "Skenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 53184,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Data buku beserta katalognya yang sudah tersedia di database",
+            "match": {
+              "location": "LihatKatalogContext.Data_buku_beserta_katalognya_yang_sudah_tersedia_di_database()"
+            },
+            "keyword": "Dengan "
+          },
+          {
+            "result": {
+              "duration": 98905,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Memasukan Katalog buku \"Eduk\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Eduk",
+                  "offset": 24
+                }
+              ],
+              "location": "LihatKatalogContext.Memasukkan_Katalog_buku(String)"
+            },
+            "keyword": "Ketika "
+          },
+          {
+            "result": {
+              "duration": 198276,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "respon gagal akan ditampilkan \"Buku Tidak Ditemukan\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Buku Tidak Ditemukan",
+                  "offset": 31
+                }
+              ],
+              "location": "LihatKatalogContext.respon_gagal_akan_ditampilkan(String)"
+            },
+            "keyword": "Maka "
+          }
+        ],
+        "tags": [
+          {
+            "line": 12,
+            "name": "@Gagal"
+          }
+        ]
+      }
+    ],
+    "name": "Mengelola Buku",
+    "description": "     Lihat Katalog",
+    "id": "mengelola-buku",
+    "keyword": "Fitur",
+    "uri": "com/mycompany/cucumber/test/LihatKatalog.feature"
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "# language: id"
+      }
+    ],
+    "line": 3,
+    "elements": [
+      {
+        "line": 7,
+        "name": "Mengembalikan Data Buku",
+        "description": "",
+        "id": "mengelola-buku;mengembalikan-data-buku",
+        "type": "scenario",
+        "keyword": "Skenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 95639,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Data buku yang sudah tersedia di database dan sedang dalam masa peminjaman",
+            "match": {
+              "location": "PengembalianBukuContext.Data_buku_yang_sudah_tersedia_di_database_dan_sedang_dalam_masa_peminjaman()"
+            },
+            "keyword": "Dengan "
+          },
+          {
+            "result": {
+              "duration": 103570,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Memasukkan data buku yang dipinjam dengan judul \"impal\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "impal",
+                  "offset": 49
+                }
+              ],
+              "location": "PengembalianBukuContext.Memasukkan_data_buku_yang_dipinjam_dengan_judul(String)"
+            },
+            "keyword": "Ketika "
+          },
+          {
+            "result": {
+              "duration": 106836,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "respon pengembalian \"Buku berhasil dikembalikan\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Buku berhasil dikembalikan",
+                  "offset": 21
+                }
+              ],
+              "location": "PengembalianBukuContext.respon_pengembalian(String)"
+            },
+            "keyword": "Maka "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@Normal"
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "Mengembalikan Data Buku",
+        "description": "",
+        "id": "mengelola-buku;mengembalikan-data-buku",
+        "type": "scenario",
+        "keyword": "Skenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 54118,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Data buku yang sudah tersedia di database dan sedang dalam masa peminjaman",
+            "match": {
+              "location": "PengembalianBukuContext.Data_buku_yang_sudah_tersedia_di_database_dan_sedang_dalam_masa_peminjaman()"
+            },
+            "keyword": "Dengan "
+          },
+          {
+            "result": {
+              "duration": 83043,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Memasukkan data buku yang dipinjam dengan judul \"belajar impal\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "belajar impal",
+                  "offset": 49
+                }
+              ],
+              "location": "PengembalianBukuContext.Memasukkan_data_buku_yang_dipinjam_dengan_judul(String)"
+            },
+            "keyword": "Ketika "
+          },
+          {
+            "result": {
+              "duration": 306512,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "respon pengembalian gagal \"Buku gagal dikembalikan\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Buku gagal dikembalikan",
+                  "offset": 27
+                }
+              ],
+              "location": "PengembalianBukuContext.respon_pengembalian_gagal(String)"
+            },
+            "keyword": "Maka "
+          }
+        ],
+        "tags": [
+          {
+            "line": 12,
+            "name": "@Gagal"
+          }
+        ]
+      }
+    ],
+    "name": "Mengelola Buku",
+    "description": "     Pengembalian Data Buku",
+    "id": "mengelola-buku",
+    "keyword": "Fitur",
+    "uri": "com/mycompany/cucumber/test/PengembalianBuku.feature"
   },
   {
     "comments": [
@@ -162,7 +738,7 @@
         "steps": [
           {
             "result": {
-              "duration": 124564,
+              "duration": 101704,
               "status": "passed"
             },
             "line": 8,
@@ -174,7 +750,7 @@
           },
           {
             "result": {
-              "duration": 132495,
+              "duration": 113834,
               "status": "passed"
             },
             "line": 9,
@@ -192,7 +768,7 @@
           },
           {
             "result": {
-              "duration": 177749,
+              "duration": 104037,
               "status": "passed"
             },
             "line": 10,
@@ -226,7 +802,7 @@
         "steps": [
           {
             "result": {
-              "duration": 63448,
+              "duration": 188479,
               "status": "passed"
             },
             "line": 14,
@@ -238,7 +814,7 @@
           },
           {
             "result": {
-              "duration": 111501,
+              "duration": 174483,
               "status": "passed"
             },
             "line": 15,
@@ -256,7 +832,7 @@
           },
           {
             "result": {
-              "duration": 111968,
+              "duration": 107769,
               "status": "passed"
             },
             "line": 16,
@@ -286,5 +862,149 @@
     "id": "mengelola-member",
     "keyword": "Fitur",
     "uri": "com/mycompany/cucumber/test/TambahAnggota.feature"
+  },
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "# language: id"
+      }
+    ],
+    "line": 3,
+    "elements": [
+      {
+        "line": 7,
+        "name": "Menambah Data Buku",
+        "description": "",
+        "id": "mengelola-buku;menambah-data-buku",
+        "type": "scenario",
+        "keyword": "Skenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 196876,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Data buku yang akan dimasukkan tersedia dan tidak duplikat dengan data yang telah ada di database",
+            "match": {
+              "location": "TambahBukuContext.Data_buku_yang_akan_dimasukkan_tersedia_dan_tidak_duplikat_dengan_data_yang_telah_ada_di_database()"
+            },
+            "keyword": "Dengan "
+          },
+          {
+            "result": {
+              "duration": 158621,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Memasukkan data buku yang akan ditambahkan dengan judul \"impal\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "impal",
+                  "offset": 57
+                }
+              ],
+              "location": "TambahBukuContext.memasukkan_data_buku_yang_akan_ditambahkan_dengan_judul(String)"
+            },
+            "keyword": "Ketika "
+          },
+          {
+            "result": {
+              "duration": 113834,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "respon berhasil dengan pesan \"Buku berhasil dimasukkan\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Buku berhasil dimasukkan",
+                  "offset": 30
+                }
+              ],
+              "location": "TambahBukuContext.respon_berhasil_dengan_pesan(String)"
+            },
+            "keyword": "Maka "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@Normal"
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "Menambah Data Buku",
+        "description": "",
+        "id": "mengelola-buku;menambah-data-buku",
+        "type": "scenario",
+        "keyword": "Skenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 53184,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Data buku yang akan dimasukkan tersedia dan tidak duplikat dengan data yang telah ada di database",
+            "match": {
+              "location": "TambahBukuContext.Data_buku_yang_akan_dimasukkan_tersedia_dan_tidak_duplikat_dengan_data_yang_telah_ada_di_database()"
+            },
+            "keyword": "Dengan "
+          },
+          {
+            "result": {
+              "duration": 90041,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Memasukkan data buku yang akan ditambahkan dengan judul \"belajar impal\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "belajar impal",
+                  "offset": 57
+                }
+              ],
+              "location": "TambahBukuContext.memasukkan_data_buku_yang_akan_ditambahkan_dengan_judul(String)"
+            },
+            "keyword": "Ketika "
+          },
+          {
+            "result": {
+              "duration": 177282,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "respon gagal tambah dengan pesan \"Buku gagal dimasukkan\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Buku gagal dimasukkan",
+                  "offset": 34
+                }
+              ],
+              "location": "TambahBukuContext.respon_gagal_tambah_dengan_pesan(String)"
+            },
+            "keyword": "Maka "
+          }
+        ],
+        "tags": [
+          {
+            "line": 12,
+            "name": "@Duplikat"
+          }
+        ]
+      }
+    ],
+    "name": "Mengelola Buku",
+    "description": "          Menambahkan Data Buku",
+    "id": "mengelola-buku",
+    "keyword": "Fitur",
+    "uri": "com/mycompany/cucumber/test/TambahBuku.feature"
   }
 ]

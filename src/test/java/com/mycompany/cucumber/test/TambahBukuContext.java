@@ -27,8 +27,8 @@ public class TambahBukuContext {
         assertEquals(expected, result);
     }
 
-    @Ketika("^Memasukan data buku yang akan ditambah dengan judul \"([^\"]*)\"$")
-    public void memasukan_data_buku_yang_akan_ditambahkan_dengan_judul(String arg1) throws Throwable {
+    @Ketika("^Memasukkan data buku yang akan ditambahkan dengan judul \"([^\"]*)\"$")
+    public void memasukkan_data_buku_yang_akan_ditambahkan_dengan_judul(String arg1) throws Throwable {
         respon = Buku.addBuku(arg1);
     }
 

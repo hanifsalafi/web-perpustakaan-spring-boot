@@ -5,28 +5,29 @@
  */
 package com.mycompany;
 
-
 /**
  *
  * @author hanif salafi
  */
-
 public class Anggota {
-    public static void main(String[]args){
+    
+    public static void main(String[] args) {
         System.out.println("Test Tambah Anggota");
     }
-    
-    
-    public static String addMember(String user){
-        if (user.equals("hanif"))
+
+    public static String addMember(String user) {
+        if (user.equals("hanif")) {
             return "user sukses dimasukan";
-        else
+        } else {
             return "duplikat";
+        }
     }
-    public static String editMember(String user){
-        if (user.equals("hanif"))
+
+    public static String editMember(String user) {
+        if (user.equals("hanif")) {
             return "Data member ditemukan";
-        else
+        } else {
             return "Data member tidak ditemukan";
+        }
     }
 }

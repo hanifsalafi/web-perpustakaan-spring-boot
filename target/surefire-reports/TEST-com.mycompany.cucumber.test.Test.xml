@@ -1,102 +1,124 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="com.mycompany.cucumber.test.Test" time="0.509" errors="1" skipped="0">
+<testsuite tests="56" failures="0" name="com.mycompany.cucumber.test.Test" time="0.007" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_121\jre\bin"/>
     <property name="java.vm.version" value="25.121-b13"/>
-    <property name="user.country.format" value="ID"/>
-    <property name="gopherProxySet" value="false"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\Kuliah\IMPAL\bdd\impal\bdd-cucumber-impal"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
-    <property name="path.separator" value=":"/>
+    <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/ristek/Documents/Perkuliahan/Semester 5/IMPAL/bdd-cucumber-impal"/>
+    <property name="user.dir" value="D:\Kuliah\IMPAL\bdd\impal\bdd-cucumber-impal"/>
     <property name="java.runtime.version" value="1.8.0_121-b13"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/endorsed"/>
-    <property name="os.arch" value="x86_64"/>
-    <property name="java.io.tmpdir" value="/var/folders/fb/6jnvk1sd40g4m49sypzl510r0000gn/T/"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_121\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\HANIFS~1\AppData\Local\Temp\"/>
     <property name="line.separator" value="
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="os.name" value="Mac OS X"/>
-    <property name="maven.ext.class.path" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven-nblib/netbeans-eventspy.jar"/>
-    <property name="classworlds.conf" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven/bin/m2.conf"/>
-    <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.library.path" value="/Users/ristek/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="D:\0Project\Belajar-Spring\maven\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_121\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Docker\Docker\Resources\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\OpenVPN\bin;C:\Program Files (x86)\Bitvise SSH Client;D:\SDK\Windows Performance Toolkit\;C:\Program Files\PuTTY\;C:\HashiCorp\Vagrant\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\0Project\Belajar-Spring\maven\bin;C:\Program Files\nodejs\;D:\ANDROID\SDK\platform-tools;D:\0Project\Belajar-Spring\spring-1.5.8.RELEASE\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\OpenVPN\bin;C:\Users\hanif salafi\AppData\Local\Microsoft\WindowsApps;C:\Users\hanif salafi\AppData\Roaming\Composer\vendor\bin;C:\Python27;C:\Python27\Scripts;C:\Program Files\Weka-3-8;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\Program Files\Java\jdk1.8.0_121\bin;C:\Users\hanif salafi\AppData\Local\atom\bin;D:\KonyVisualizerEnterprise7.3.0\ImageMagick;D:\KonyVisualizerEnterprise7.3.0\Ant\bin;D:\ANDROID\SDK\platform-tools;D:\ANDROID\SDK\tools;D:\KonyVisualizerEnterprise7.3.0\Java\jdk1.8.0_112\bin;C:\Users\hanif salafi\AppData\Local\GitHubDesktop\bin;C:\opscode\chefdk\;D:\Data Instal\Docker Toolbox;C:\Program Files (x86)\Jar2Exe Wizard\;C:\Program Files (x86)\CodeBlocks\MinGW\lib\gcc\mingw32\4.9.2\include;C:\Users\hanif salafi\AppData\Roaming\npm;;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;."/>
+    <property name="maven.conf" value="D:\0Project\Belajar-Spring\maven\bin\../conf"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="10.10.5"/>
-    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="user.home" value="/Users/ristek"/>
-    <property name="user.timezone" value="Asia/Jakarta"/>
-    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="D:\0Project\Belajar-Spring\maven\bin\..\lib\jansi-native\windows64"/>
+    <property name="user.home" value="C:\Users\hanif salafi"/>
+    <property name="user.timezone" value="Asia/Bangkok"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
     <property name="java.specification.version" value="1.8"/>
-    <property name="file.encoding" value="UTF-8"/>
-    <property name="user.name" value="ristek"/>
-    <property name="java.class.path" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven/boot/plexus-classworlds-2.4.jar"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="hanif salafi"/>
+    <property name="java.class.path" value="D:\0Project\Belajar-Spring\maven\bin\..\boot\plexus-classworlds-2.5.2.jar"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven-nblib/netbeans-eventspy.jar test"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_121\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean verify sonar:sonar"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
-    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="java.vm.info" value="mixed mode"/>
     <property name="java.version" value="1.8.0_121"/>
-    <property name="java.ext.dirs" value="/Users/ristek/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
-    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/jre/classes"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_121\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_121\jre\classes"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="/Applications/NetBeans/NetBeans 8.2.app/Contents/Resources/NetBeans/java/maven"/>
-    <property name="file.separator" value="/"/>
+    <property name="maven.home" value="D:\0Project\Belajar-Spring\maven\bin\.."/>
+    <property name="file.separator" value="\"/>
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
-    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.mycompany.cucumber.test.Test" name="initializationError" time="0.01">
-    <error message="Duplicate step definitions in com.mycompany.cucumber.test.LihatKatalogContext.respon_dari_sistem(String) in file:/Users/ristek/Documents/Perkuliahan/Semester%205/IMPAL/bdd-cucumber-impal/target/test-classes/ and com.mycompany.cucumber.test.CariAnggotaContext.respon_dari_sistem(String) in file:/Users/ristek/Documents/Perkuliahan/Semester%205/IMPAL/bdd-cucumber-impal/target/test-classes/" type="cucumber.runtime.DuplicateStepDefinitionException">cucumber.runtime.DuplicateStepDefinitionException: Duplicate step definitions in com.mycompany.cucumber.test.LihatKatalogContext.respon_dari_sistem(String) in file:/Users/ristek/Documents/Perkuliahan/Semester%205/IMPAL/bdd-cucumber-impal/target/test-classes/ and com.mycompany.cucumber.test.CariAnggotaContext.respon_dari_sistem(String) in file:/Users/ristek/Documents/Perkuliahan/Semester%205/IMPAL/bdd-cucumber-impal/target/test-classes/
-	at cucumber.runtime.RuntimeGlue.addStepDefinition(RuntimeGlue.java:33)
-	at cucumber.runtime.java.JavaBackend.addStepDefinition(JavaBackend.java:151)
-	at cucumber.runtime.java.MethodScanner.scan(MethodScanner.java:68)
-	at cucumber.runtime.java.MethodScanner.scan(MethodScanner.java:41)
-	at cucumber.runtime.java.JavaBackend.loadGlue(JavaBackend.java:86)
-	at cucumber.runtime.Runtime.&lt;init&gt;(Runtime.java:91)
-	at cucumber.runtime.Runtime.&lt;init&gt;(Runtime.java:69)
-	at cucumber.runtime.Runtime.&lt;init&gt;(Runtime.java:65)
-	at cucumber.api.junit.Cucumber.createRuntime(Cucumber.java:78)
-	at cucumber.api.junit.Cucumber.&lt;init&gt;(Cucumber.java:58)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.junit.internal.builders.AnnotatedBuilder.buildRunner(AnnotatedBuilder.java:104)
-	at org.junit.internal.builders.AnnotatedBuilder.runnerForClass(AnnotatedBuilder.java:86)
-	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:59)
-	at org.junit.internal.builders.AllDefaultPossibilitiesBuilder.runnerForClass(AllDefaultPossibilitiesBuilder.java:26)
-	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:59)
-	at org.junit.internal.requests.ClassRequest.getRunner(ClassRequest.java:33)
-	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:51)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
-	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
-	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
-</error>
-  </testcase>
+  <testcase classname="Skenario: Mencari Data Member" name="Dengan Data member yang sudah tersedia di database" time="0.002"/>
+  <testcase classname="Skenario: Mencari Data Member" name="Ketika Memasukan nama member &quot;hanif&quot;" time="0"/>
+  <testcase classname="Skenario: Mencari Data Member" name="Maka respon dari sistem &quot;Data member ditemukan&quot;" time="0"/>
+  <testcase classname="Skenario: Mencari Data Member" name="Skenario: Mencari Data Member" time="0"/>
+  <testcase classname="Skenario: Mencari Data Member" name="Dengan Data member yang sudah tersedia di database" time="0"/>
+  <testcase classname="Skenario: Mencari Data Member" name="Ketika Memasukan nama member &quot;salafi&quot;" time="0"/>
+  <testcase classname="Skenario: Mencari Data Member" name="Maka respon gagal dari sistem &quot;Data member tidak ditemukan&quot;" time="0"/>
+  <testcase classname="Skenario: Mencari Data Member" name="Skenario: Mencari Data Member" time="0"/>
+  <testcase classname="Skenario: Mencari Data Buku" name="Dengan Data buku yang sudah tersedia di database" time="0"/>
+  <testcase classname="Skenario: Mencari Data Buku" name="Ketika Memasukan data buku dengan judul &quot;impal&quot;" time="0"/>
+  <testcase classname="Skenario: Mencari Data Buku" name="Maka respon pencarian &quot;Data buku ditemukan&quot;" time="0"/>
+  <testcase classname="Skenario: Mencari Data Buku" name="Skenario: Mencari Data Buku" time="0"/>
+  <testcase classname="Skenario: Mencari Data Buku" name="Dengan Data buku yang sudah tersedia di database" time="0"/>
+  <testcase classname="Skenario: Mencari Data Buku" name="Ketika Memasukan data buku dengan judul &quot;belajar impal&quot;" time="0"/>
+  <testcase classname="Skenario: Mencari Data Buku" name="Maka respon gagal pencarian dengan pesan &quot;Data buku tidak ditemukan&quot;" time="0"/>
+  <testcase classname="Skenario: Mencari Data Buku" name="Skenario: Mencari Data Buku" time="0"/>
+  <testcase classname="Skenario: Menghapus Data Buku" name="Dengan Data buku yang akan dihapus tersedia di database" time="0"/>
+  <testcase classname="Skenario: Menghapus Data Buku" name="Ketika Memasukkan data buku yang akan dihapus dengan judul &quot;impal&quot;" time="0"/>
+  <testcase classname="Skenario: Menghapus Data Buku" name="Maka respon sukses hapus dengan pesan &quot;Buku Berhasil Dihapus&quot;" time="0"/>
+  <testcase classname="Skenario: Menghapus Data Buku" name="Skenario: Menghapus Data Buku" time="0"/>
+  <testcase classname="Skenario: Menghapus Data Buku" name="Dengan Data buku yang akan dihapus tersedia di database" time="0"/>
+  <testcase classname="Skenario: Menghapus Data Buku" name="Ketika Memasukkan data buku yang akan dihapus dengan judul &quot;belajar impal&quot;" time="0"/>
+  <testcase classname="Skenario: Menghapus Data Buku" name="Maka respon gagal hapus dengan pesan &quot;Buku Tidak Ditemukan&quot;" time="0"/>
+  <testcase classname="Skenario: Menghapus Data Buku" name="Skenario: Menghapus Data Buku" time="0"/>
+  <testcase classname="Skenario: Lihat Katalog" name="Dengan Data buku beserta katalognya yang sudah tersedia di database" time="0"/>
+  <testcase classname="Skenario: Lihat Katalog" name="Ketika Memasukan Katalog buku &quot;Edukasi&quot;" time="0"/>
+  <testcase classname="Skenario: Lihat Katalog" name="Maka respon yang akan ditampilkan &quot;Buku Ditemukan&quot;" time="0.001"/>
+  <testcase classname="Skenario: Lihat Katalog" name="Skenario: Lihat Katalog" time="0.001"/>
+  <testcase classname="Skenario: Lihat Katalog" name="Dengan Data buku beserta katalognya yang sudah tersedia di database" time="0"/>
+  <testcase classname="Skenario: Lihat Katalog" name="Ketika Memasukan Katalog buku &quot;Eduk&quot;" time="0"/>
+  <testcase classname="Skenario: Lihat Katalog" name="Maka respon gagal akan ditampilkan &quot;Buku Tidak Ditemukan&quot;" time="0"/>
+  <testcase classname="Skenario: Lihat Katalog" name="Skenario: Lihat Katalog" time="0.001"/>
+  <testcase classname="Skenario: Mengembalikan Data Buku" name="Dengan Data buku yang sudah tersedia di database dan sedang dalam masa peminjaman" time="0"/>
+  <testcase classname="Skenario: Mengembalikan Data Buku" name="Ketika Memasukkan data buku yang dipinjam dengan judul &quot;impal&quot;" time="0"/>
+  <testcase classname="Skenario: Mengembalikan Data Buku" name="Maka respon pengembalian &quot;Buku berhasil dikembalikan&quot;" time="0"/>
+  <testcase classname="Skenario: Mengembalikan Data Buku" name="Skenario: Mengembalikan Data Buku" time="0"/>
+  <testcase classname="Skenario: Mengembalikan Data Buku" name="Dengan Data buku yang sudah tersedia di database dan sedang dalam masa peminjaman" time="0"/>
+  <testcase classname="Skenario: Mengembalikan Data Buku" name="Ketika Memasukkan data buku yang dipinjam dengan judul &quot;belajar impal&quot;" time="0"/>
+  <testcase classname="Skenario: Mengembalikan Data Buku" name="Maka respon pengembalian gagal &quot;Buku gagal dikembalikan&quot;" time="0"/>
+  <testcase classname="Skenario: Mengembalikan Data Buku" name="Skenario: Mengembalikan Data Buku" time="0"/>
+  <testcase classname="Skenario: Mendaftarkan Member Baru" name="Dengan Data member baru yang akan dimasukan tersedia dan tidak duplikat dengan data yang telah ada di database" time="0"/>
+  <testcase classname="Skenario: Mendaftarkan Member Baru" name="Ketika Memasukan data member dengan nama &quot;hanif&quot;" time="0"/>
+  <testcase classname="Skenario: Mendaftarkan Member Baru" name="Maka respon &quot;user sukses dimasukan&quot;" time="0"/>
+  <testcase classname="Skenario: Mendaftarkan Member Baru" name="Skenario: Mendaftarkan Member Baru" time="0"/>
+  <testcase classname="Skenario: Mendaftarkan Member Baru" name="Dengan Data member baru yang akan dimasukan tersedia dan tidak duplikat dengan data yang telah ada di database" time="0"/>
+  <testcase classname="Skenario: Mendaftarkan Member Baru" name="Ketika Memasukan data member dengan nama &quot;salafi&quot;" time="0"/>
+  <testcase classname="Skenario: Mendaftarkan Member Baru" name="Maka respon gagal dengan pesan &quot;duplikat&quot;" time="0.001"/>
+  <testcase classname="Skenario: Mendaftarkan Member Baru" name="Skenario: Mendaftarkan Member Baru" time="0.001"/>
+  <testcase classname="Skenario: Menambah Data Buku" name="Dengan Data buku yang akan dimasukkan tersedia dan tidak duplikat dengan data yang telah ada di database" time="0"/>
+  <testcase classname="Skenario: Menambah Data Buku" name="Ketika Memasukkan data buku yang akan ditambahkan dengan judul &quot;impal&quot;" time="0"/>
+  <testcase classname="Skenario: Menambah Data Buku" name="Maka respon berhasil dengan pesan &quot;Buku berhasil dimasukkan&quot;" time="0"/>
+  <testcase classname="Skenario: Menambah Data Buku" name="Skenario: Menambah Data Buku" time="0"/>
+  <testcase classname="Skenario: Menambah Data Buku" name="Dengan Data buku yang akan dimasukkan tersedia dan tidak duplikat dengan data yang telah ada di database" time="0"/>
+  <testcase classname="Skenario: Menambah Data Buku" name="Ketika Memasukkan data buku yang akan ditambahkan dengan judul &quot;belajar impal&quot;" time="0"/>
+  <testcase classname="Skenario: Menambah Data Buku" name="Maka respon gagal tambah dengan pesan &quot;Buku gagal dimasukkan&quot;" time="0"/>
+  <testcase classname="Skenario: Menambah Data Buku" name="Skenario: Menambah Data Buku" time="0"/>
 </testsuite>

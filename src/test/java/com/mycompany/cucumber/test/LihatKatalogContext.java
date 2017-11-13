@@ -17,7 +17,7 @@ import static junit.framework.Assert.assertEquals;
  */
 public class LihatKatalogContext {
     String respon;
-    @Dengan("^Data buku yang sudah tersedia di database beserta katalognya$")
+    @Dengan("^Data buku beserta katalognya yang sudah tersedia di database$")
     public void Data_buku_beserta_katalognya_yang_sudah_tersedia_di_database() throws Throwable {
         boolean expected = false;
         //berisi code untuk mengecek buku di database apakah sudah tersedia
@@ -26,17 +26,17 @@ public class LihatKatalogContext {
     }
 
     @Ketika("^Memasukan Katalog buku \"([^\"]*)\"$")
-    public void Memasukkan_katalog_buku(String arg1) throws Throwable {
+    public void Memasukkan_Katalog_buku(String arg1) throws Throwable {
         respon = Buku.lihatKatalog(arg1);
     }
 
-    @Maka("^respon lihatKatalog \"([^\"]*)\"$")
-    public void respon_lihatKatalog(String arg1) throws Throwable {
+    @Maka("^respon yang akan ditampilkan \"([^\"]*)\"$")
+    public void respon_yang_akan_ditampilkan(String arg1) throws Throwable {
         assertEquals(arg1, respon);
     }
 
-    @Maka("^respon lihatKatalog gagal \"([^\"]*)\"$")
-    public void respon_lihatKatalog_gagal(String arg1) throws Throwable {
+    @Maka("^respon gagal akan ditampilkan \"([^\"]*)\"$")
+    public void respon_gagal_akan_ditampilkan(String arg1) throws Throwable {
         assertEquals(arg1, respon);
     }
 }

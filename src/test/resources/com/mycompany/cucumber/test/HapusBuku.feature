@@ -6,7 +6,7 @@ Fitur: Mengelola Buku
         @Normal
         Skenario: Menghapus Data Buku
                 Dengan Data buku yang akan dihapus tersedia di database
-                Ketika Memasukkan data buku yang akan dihapus dengan judul "impal"
+                Ketika Memasukkan data buku yang akan dihapus dengan judul "dap"
                 Maka respon sukses hapus dengan pesan "Buku Berhasil Dihapus"
 
         @Gagal

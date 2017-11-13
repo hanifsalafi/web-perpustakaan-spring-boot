@@ -11,15 +11,20 @@ package com.mycompany;
  */
 public class Buku {
 
+    public Buku() {
+        throw new IllegalStateException("anggota class");
+    }
+    
+    
     public static String addBuku(String book){
-        if (book.equals("impal"))
+        if (book.equals("matdis"))
             return "Buku berhasil dimasukkan";
         else
             return "Buku gagal dimasukkan";
     }
     
     public static String hapusBuku(String book){
-        if (book.equals("impal"))
+        if (book.equals("dap"))
             return "Buku Berhasil Dihapus";
         else
             return "Buku Tidak Ditemukan";
@@ -41,21 +46,21 @@ public class Buku {
     }
     
         public static String lihatKatalog(String book){
-        if (book.equals("dzulfi"))
-            return "Data kategori buku ditemukan";
+        if (book.equals("Edukasi"))
+            return "Buku Ditemukan";
         else
-            return "Data kategori buku tidak ditemukan";
+            return "Buku Tidak Ditemukan";
     }
 
     public static String pengembalianBuku(String book) {
-          if (book.equals("impal"))
+          if (book.equals("daa"))
             return "Buku berhasil dikembalikan";
         else
             return "Buku gagal dikembalikan";
     }
     
     public static String pinjamBuku(String book, String nama) {
-          if (book.equals("impal") && nama.equals("dzulfi") )
+          if (book.equals("tba") && nama.equals("dzulfi") )
             return "Peminjaman Berhasil";
         else
             return "Peminjaman Gagal";
