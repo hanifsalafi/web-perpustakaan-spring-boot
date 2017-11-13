@@ -1,16 +1,16 @@
 # language: id
 
 Fitur: Mengelola Buku
-       Pengembalian Data Buku
+       Lihat Katalog
 
 	@Normal
-	Skenario: Mengembalikan Data Buku
-		Dengan Data buku yang sudah tersedia di database dan sedang dalam masa peminjaman
-                Ketika Memasukkan data buku yang dipinjam dengan judul "impal"
-		Maka respon pengembalian "Buku berhasil dikembalikan"
+	Skenario: Lihat Katalog 
+		Dengan Data buku beserta katalognya yang sudah tersedia di database
+		Ketika Memasukan Katalog buku "Edukasi"
+		Maka respon dari sistem akan menampilkan "Buku Ditemukan"
 
-        @Gagal
-        Skenario: Mengembalikan Data Buku
-		Dengan Data buku yang sudah tersedia di database dan sedang dalam masa peminjaman
-                Ketika Memasukkan data buku yang dipinjam dengan judul "belajar impal"
-		Maka respon pengembalian gagal "Buku gagal dikembalikan"
+        @Duplikat
+        Skenario: Lihat Katalog 
+		Dengan Data buku beserta katalognya yang sudah tersedia di database
+		Ketika Memasukan Katalog buku "Eduk"
+		Maka respon gagal dari sistem akan menampilkan "Buku Tidak Ditemukan"
