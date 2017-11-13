@@ -6,11 +6,11 @@ Fitur: Mengelola Member
 	@Normal
 	Skenario: Mencari Data Member
 		Dengan Data member yang sudah tersedia di database
-		Ketika Memasukan nama member "hanif"
+		Ketika Memasukan nama member "witsqa"
 		Maka respon dari sistem "Data member ditemukan"
 
         @Gagal
         Skenario: Mencari Data Member
 		Dengan Data member yang sudah tersedia di database
-		Ketika Memasukan nama member "salafi"
+		Ketika Memasukan nama member "hanif"
 		Maka respon gagal dari sistem "Data member tidak ditemukan"
