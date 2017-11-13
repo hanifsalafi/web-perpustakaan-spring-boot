@@ -11,10 +11,8 @@ package com.mycompany;
  */
 public class Buku {
 
-    public Buku() {
-        throw new IllegalStateException("anggota class");
+    Buku (Buku buku){
     }
-    
     
     public static String addBuku(String book){
         if (book.equals("matdis"))

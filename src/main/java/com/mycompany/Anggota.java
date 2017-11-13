@@ -5,14 +5,18 @@
  */
 package com.mycompany;
 
+import java.util.logging.Logger;
+
 /**
  *
  * @author hanif salafi
  */
 public class Anggota {
     
+    private static Logger logger = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
+
     public static void main(String[] args) {
-        System.out.println("Test Tambah Anggota");
+        logger.info("Test Bdd Cucumber");
     }
 
     public static String addMember(String user) {
