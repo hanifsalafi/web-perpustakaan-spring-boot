@@ -4,12 +4,13 @@ Feature : Mengedit Buku
 
 @Normal
 Scenario : Mengedit Data Buku
-	Dengan Data Buku  dan ID buku yang akan diedit dan Data Buku yang akan di database ada
-        Ketika ID buku yang akan diedit diari dan edit buku
+	Dengan Data Buku yang udah tersedia di database 
+        Ketika memasukkan nama buku "bukuWitsqa"
 	Maka Respon "Buku berhasil diedit"
 
 @Duplikat
 Scenario : Mengedit Data Buku
-	Dengan Data Buku dan ID buku yang akan diedit dan Data Buku yang akan di database tidak ada
-        Ketika buku yang dicari dengan ID buku yang akan diedit 
+	Dengan Data Buku yang udah tersedia di database
+        Ketika memasukkan nama buku "bukuWitsqa"
 	Maka Respon "Buku tidak berhasil diedit"
+
