@@ -18,7 +18,7 @@ import static junit.framework.Assert.assertEquals;
 public class LihatKatalogContext {
     String respon;
     @Dengan("^Data buku yang sudah tersedia di database beserta katalognya$")
-    public void Data_buku_yang_sudah_tersedia_di_database_beserta_katalognya() throws Throwable {
+    public void Data_buku_beserta_katalognya_yang_sudah_tersedia_di_database() throws Throwable {
         boolean expected = false;
         //berisi code untuk mengecek buku di database apakah sudah tersedia
         boolean result = false;
