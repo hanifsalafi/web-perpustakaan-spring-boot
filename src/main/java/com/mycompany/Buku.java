@@ -14,10 +14,24 @@ public class Buku {
         System.out.println("Test buku");
     }
     
+    public static String addBuku(String book){
+        if (book.equals("impal"))
+            return "Buku berhasil dimasukkan";
+        else
+            return "Buku gagal dimasukkan";
+    }
     
+    public static String hapusBuku(String book){
+        if (book.equals("impal"))
+            return "Buku Berhasil Dihapus";
+        else
+            return "Buku Tidak Ditemukan";
+    }
+     
+     
     public static String cariBuku(String book){
-        if (book.equals("dzulfi"))
-            return "buku sukses ditemukan";
+        if (book.equals("impal"))
+            return "Data buku ditemukan";
         else
             return "Data buku tidak ditemukan";
     }
@@ -29,10 +43,18 @@ public class Buku {
             return "Data buku tidak ditemukan";
     }
     
-        public static String lihatKatalog(String cat){
-        if (cat.equals("dzulfi"))
+        public static String lihatKatalog(String book){
+        if (book.equals("dzulfi"))
             return "Data kategori buku ditemukan";
         else
             return "Data kategori buku tidak ditemukan";
     }
+
+    public static String pengembalianBuku(String book) {
+          if (book.equals("impal"))
+            return "Buku berhasil dikembalikan";
+        else
+            return "Buku gagal dikembalikan";
+    }
+    
 }
