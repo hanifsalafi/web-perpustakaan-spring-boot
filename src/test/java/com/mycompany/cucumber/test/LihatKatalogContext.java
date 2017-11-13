@@ -5,7 +5,7 @@
  */
 package com.mycompany.cucumber.test;
 
-import com.mycompany.Anggota;
+import com.mycompany.Buku;
 import cucumber.api.java.bm.Maka;
 import cucumber.api.java.id.Dengan;
 import cucumber.api.java.id.Ketika;
@@ -13,32 +13,30 @@ import static junit.framework.Assert.assertEquals;
 
 /**
  *
- * @author ristek
+ * @author USer
  */
 public class LihatKatalogContext {
     String respon;
-
-    //---Fitur Mencari Data Member---
-    @Dengan("^Data member yang sudah tersedia di database$")
-    public void Data_member_yang_sudah_tersedia_di_database() throws Throwable {
+    @Dengan("^Data buku yang sudah tersedia di database beserta katalognya$")
+    public void Data_buku_yang_sudah_tersedia_di_database_beserta_katalognya() throws Throwable {
         boolean expected = false;
-        //berisi code untuk mengecek user di database apakah sudah tersedia
+        //berisi code untuk mengecek buku di database apakah sudah tersedia
         boolean result = false;
         assertEquals(expected, result);
     }
 
-    @Ketika("^Memasukan nama member \"([^\"]*)\"$")
-    public void Memasukan_nama_member(String arg1) throws Throwable {
-        respon =Anggota.editMember(arg1);
+    @Ketika("^Memasukan Katalog buku \"([^\"]*)\"$")
+    public void Memasukkan_katalog_buku(String arg1) throws Throwable {
+        respon = Buku.lihatKatalog(arg1);
     }
 
-    @Maka("^respon dari sistem \"([^\"]*)\"$")
-    public void respon_dari_sistem(String arg1) throws Throwable {
+    @Maka("^respon lihatKatalog \"([^\"]*)\"$")
+    public void respon_lihatKatalog(String arg1) throws Throwable {
         assertEquals(arg1, respon);
     }
 
-    @Maka("^respon gagal dari sistem \"([^\"]*)\"$")
-    public void respon_gagal_dari_sistem(String arg1) throws Throwable {
+    @Maka("^respon lihatKatalog gagal \"([^\"]*)\"$")
+    public void respon_lihatKatalog_gagal(String arg1) throws Throwable {
         assertEquals(arg1, respon);
     }
 }
