@@ -33,7 +33,7 @@ public class CariAnggotaContext {
 
     @Ketika("^Memasukan nama member \"([^\"]*)\"$")
     public void Memasukan_nama_member(String arg1) throws Throwable {
-        respon =Anggota.editMember(arg1);
+        respon =Anggota.cariMember(arg1);
     }
 
     @Maka("^respon dari sistem \"([^\"]*)\"$")
