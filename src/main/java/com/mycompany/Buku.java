@@ -10,10 +10,7 @@ package com.mycompany;
  * @author ristek
  */
 public class Buku {
-    public static void main(String[]args){
-        System.out.println("Test buku");
-    }
-    
+
     public static String addBuku(String book){
         if (book.equals("impal"))
             return "Buku berhasil dimasukkan";
@@ -55,6 +52,13 @@ public class Buku {
             return "Buku berhasil dikembalikan";
         else
             return "Buku gagal dikembalikan";
+    }
+    
+    public static String pinjamBuku(String book, String nama) {
+          if (book.equals("impal") && nama.equals("dzulfi") )
+            return "Peminjaman Berhasil";
+        else
+            return "Peminjaman Gagal";
     }
     
 }

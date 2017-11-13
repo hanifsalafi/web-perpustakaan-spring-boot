@@ -5,10 +5,40 @@
  */
 package com.mycompany.cucumber.test;
 
+import com.mycompany.Anggota;
+import cucumber.api.java.bm.Maka;
+import cucumber.api.java.id.Dengan;
+import cucumber.api.java.id.Ketika;
+import static junit.framework.Assert.assertEquals;
+
 /**
  *
  * @author ristek
  */
 public class LihatKatalogContext {
-    
+    String respon;
+
+    //---Fitur Mencari Data Member---
+    @Dengan("^Data member yang sudah tersedia di database$")
+    public void Data_member_yang_sudah_tersedia_di_database() throws Throwable {
+        boolean expected = false;
+        //berisi code untuk mengecek user di database apakah sudah tersedia
+        boolean result = false;
+        assertEquals(expected, result);
+    }
+
+    @Ketika("^Memasukan nama member \"([^\"]*)\"$")
+    public void Memasukan_nama_member(String arg1) throws Throwable {
+        respon =Anggota.editMember(arg1);
+    }
+
+    @Maka("^respon dari sistem \"([^\"]*)\"$")
+    public void respon_dari_sistem(String arg1) throws Throwable {
+        assertEquals(arg1, respon);
+    }
+
+    @Maka("^respon gagal dari sistem \"([^\"]*)\"$")
+    public void respon_gagal_dari_sistem(String arg1) throws Throwable {
+        assertEquals(arg1, respon);
+    }
 }

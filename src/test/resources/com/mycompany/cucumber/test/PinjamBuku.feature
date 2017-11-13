@@ -5,12 +5,14 @@ Fitur: Mengelola Buku
 
 	@Normal
 	Skenario: Mencari Data Buku
-		Dengan Data buku yang sudah tersedia di database
-		Ketika Memasukan judul buku "dzulfiqar"
-		Maka respon dari sistem "Data member ditemukan"
+		Dengan Data buku yang telah tersedia di database
+                Ketika input data member dengan nama "dzulfi"
+		Dan input data buku dengan judul "impal"
+		Maka respon dari sistem adalah "Peminjaman Berhasil"
 
-        @Duplikat
+        @Gagal
         Skenario: Mencari Data Buku
-		Dengan Data buku yang sudah tersedia di database
-		Ketika Memasukan judul buku "ridha"
-		Maka respon gagal dari sistem "Data buku tidak ditemukan"   
+		Dengan Data buku yang telah tersedia di database
+                Ketika input data member dengan nama "dzulfi"
+		Dan input data buku dengan judul "dzulfi"
+		Maka respon dari sistem iyalah "Peminjaman Gagal"
