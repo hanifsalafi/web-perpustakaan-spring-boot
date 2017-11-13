@@ -24,7 +24,7 @@ public class Anggota {
     }
 
     public static String editMember(String user) {
-        if (user.equals("hanif")) {
+        if (user.equals("Witsqa")) {
             return "Data member ditemukan";
         } else {
             return "Data member tidak ditemukan";
