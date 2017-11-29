@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" >
+  <head>
+    <title>Admin</title>
+
+    <!-- Bootstrap core CSS -->
+    <link th:href="@{/bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
+    <link th:href="@{/font-awesome/css/font-awesome.min.css}" rel="stylesheet"/>
+    <link th:href="@{/css/default.css}" rel="stylesheet"/>
+
+  </head>
+  <body>
+    <div class="container-fluid display-table">
+      <div class="row display-table-row">
+          <!-- side menu -->
+          <div class="col-md-2 col-sm-1 hidden-xs display-table-cell valign-top" id="side-menu">
+            <h1 class="hidden-xs hidden-sm icon-nav">OpenLibrary</h1>
+            <ul>
+              <li class="link active">
+                <a href="/">
+                   <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                   <span class="hidden-sm hidden-xs">Dashboard</span>
+                </a>
+              </li>
+
+              <li class="link">
+                <a href="#collapse-post" data-toggle="collapse" aria-hidden="collapse-post">
+                  <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                  <span class="hidden-sm hidden-xs">Anggota</span>
+                </a>
+                <ul class="collapse collapseable" id="collapse-post">
+                  <li><a href="#">Create New</a></li>
+                  <li><a href="#">View Article</a></li>
+                </ul>
+              </li>
+
+              <li class="link">
+                <a href="#collapse-comments" data-toggle="collapse" aria-hidden="collapse-comments">
+                   <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+                   <span class="hidden-sm hidden-xs">Buku</span>
+                </a>
+                <ul class="collapse collapseable" id="collapse-comments">
+                  <li>
+                  <a href="#">Approved
+                  <span class="label label-success pull-right hidden-sm hidden-xs">5</span>
+                  </a>
+                  </li>
+                  
+                  <li><a href="#">Unapproved
+                  <span class="label label-warning pull-right hidden-sm hidden-xs">2</span>
+                  </a></li>                  
+                </ul>
+              </li>
+
+              <li class="link">
+                <a href="struktur.html">
+                   <span class="glyphicon glyphicon-th" aria-hidden="true"></span>
+                   <span class="hidden-xs hidden-sm">Struktur</span>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+
+          <!-- main content area -->
+          <div class="col-md-10 col-sm-11 display-table-cell valign-top">
+            <div class="row">
+              <header id="nav-header" class="clearfix"> 
+                <div class="col-md-5">
+                  <nav class="navbar-default pull-left">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="offcanvas" data-target="#side-menu" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                  </nav>
+                  <input type="text" class="hidden-sm hidden-xs" id="header-search-field" placeholder="Cari sesuatu..."/>
+                </div>
+                <div class="col-md-7">
+                  <ul class="pull-right">
+                    <li class="hidden-xs" id="welcome">Selamat Datang di Panel Admin HMIF</li>
+                    <li class="fixed-width">
+                      <a href="#">
+                        <span class="glyphicon glyphicon-bell" aria-hidden="true"></span>
+                        <span class="label label-warning" >3</span>
+                      </a>
+                    </li>
+                     <li class="fixed-width">
+                      <a href="#">
+                        <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                        <span class="label label-message" >3</span>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a class="logout" href="#">
+                        <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>
+                        Log Out
+                      </a>
+                    </li>
+                  </ul>            
+                </div>
+              </header>
+
+
+            </div>
+            <div class="row">
+              <footer id="admin-footer" class="clearfix">
+                <div class="pull-left"><b>Copyright </b>&copy; 2017</div>
+                <div class="pull-right">Admin System</div>
+              </footer>
+
+            </div>
+          </div>
+          
+
+
+      </div>
+    </div>
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script th:src="@{/js/jquery.min.js}"></script>
+    <script th:src="@{/js/bootstrap.min.js}"></script>
+    <script th:src="@{/js/default.js}"></script>
+  </body>
+</html>

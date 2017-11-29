@@ -15,9 +15,9 @@ public class Anggota {
     
     private static Logger logger = Logger.getLogger(Logger.GLOBAL_LOGGER_NAME);
 
-    public static void main(String[] args) {
-        logger.info("Test Bdd Cucumber");
-    }
+//    public static void main(String[] args) {
+//        logger.info("Test Bdd Cucumber");
+//    }
 
     public static String addMember(String user) {
         if (user.equals("hanif")) {
