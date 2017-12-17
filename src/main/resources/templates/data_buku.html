@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <title>Admin</title>
+
+    <!-- Bootstrap core CSS -->
+    <link th:href="@{/bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
+    <link th:href="@{/font-awesome/css/font-awesome.min.css}" rel="stylesheet"/>
+    <link th:href="@{/css/default.css}" rel="stylesheet"/>
+    <link th:href="@{/css/table.css}" rel="stylesheet"/>
+
+
+</head>
+<body>
+<div class="container-fluid display-table">
+    <div class="row display-table-row">
+        <!-- side menu -->
+        <div class="col-md-2 col-sm-1 hidden-xs display-table-cell valign-top" id="side-menu">
+            <h1 class="hidden-xs hidden-sm icon-nav">OpenLibrary</h1>
+            <ul>
+                <li class="top-menu link active">
+                    <a href="/">
+                        <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                        <span class="hidden-sm hidden-xs">Dashboard</span>
+                    </a>
+                </li>
+                <li class="link">
+                    <a href="#collapse-member" data-toggle="collapse" aria-hidden="collapse-member">
+                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                        <span class="hidden-sm hidden-xs">Anggota</span>
+                    </a>
+                    <ul class="collapse collapseable" id="collapse-member">
+                        <li><a href="/anggota/create">Tambah Anggota</a></li>
+                        <li><a href="/anggota">Data Anggota</a></li>
+                    </ul>
+                </li>
+
+                <li class="link">
+                    <a href="#collapse-book" data-toggle="collapse" aria-hidden="collapse-book">
+                        <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+                        <span class="hidden-sm hidden-xs">Buku</span>
+                    </a>
+                    <ul class="collapse collapseable" id="collapse-book">
+                        <li>
+                            <a href="/buku/create">Tambah Buku</a>
+                        </li>
+                        <li><a href="/buku">Data Buku</a></li>
+                    </ul>
+                </li>
+
+                <li class="link">
+                    <a href="#collapse-transaction" data-toggle="collapse" aria-hidden="collapse-transaction">
+                        <span class="glyphicon glyphicon-th" aria-hidden="true"></span>
+                        <span class="hidden-sm hidden-xs">Transaksi</span>
+                    </a>
+                    <ul class="collapse collapseable" id="collapse-transaction">
+                        <li><a href="/peminjaman/create">Peminjaman</a> </li>
+                        <li><a href="/peminjaman">Data Peminjaman</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+        <!-- main content area -->
+        <div class="col-md-10 col-sm-11 display-table-cell valign-top">
+            <div class="row">
+                <header id="nav-header" class="clearfix">
+                    <div class="col-md-5">
+                        <nav class="navbar-default pull-left">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="offcanvas" data-target="#side-menu" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </nav>
+                        <input type="text" class="hidden-sm hidden-xs" id="header-search-field" placeholder="Cari sesuatu..."/>
+                    </div>
+                    <div class="col-md-7">
+                        <ul class="pull-right">
+                            <li class="hidden-xs" id="welcome">Selamat Datang di Panel Admin HMIF</li>
+                            <li class="fixed-width">
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-bell" aria-hidden="true"></span>
+                                    <span class="label label-warning" >3</span>
+                                </a>
+                            </li>
+                            <li class="fixed-width">
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                                    <span class="label label-message" >3</span>
+                                </a>
+                            </li>
+
+                            <li style="padding-top:10px;">
+                                <form name="f" th:action="@{/logout}" method="post">
+                                    <input type="submit" class="btn btn-default" value="Logout" style="padding-top: 5px;padding-bottom: 5px;"/>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </header>
+
+
+                <div th:if="${not #lists.isEmpty(buku)}" >
+                    <div class="row" style="margin:0px 20px 0px 20px;">
+                        <h1>Data Buku</h1>
+                        <div class="panel panel-default">
+                            <table class="table table-fixed">
+                                <thead>
+                                <tr>
+                                    <th class="col-xs-1 col-sm-1 col-lg-1">Kode Buku</th>
+                                    <th class="col-xs-2 col-sm-2 col-lg-2">Judul</th>
+                                    <th class="col-xs-2 col-sm-2 col-lg-2">Pengarang</th>
+                                    <th class="col-xs-2 col-sm-2 col-lg-2" style="padding-left:10px;">Penerbit</th>
+                                    <th class="col-xs-1 col-sm-1 col-lg-1" style="padding-left:15px;">Tahun Terbit</th>
+                                    <th class="col-xs-1 col-sm-1 col-lg-1" style="padding-left:18px;">Kategori</th>
+                                    <th class="col-xs-1 col-sm-1 col-lg-1" style="padding-left:20px;">Jumlah</th>
+                                    <th class="col-xs-2 col-sm-2 col-lg-2" style="padding-left:20px;">Action</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr th:each="buku : ${buku}">
+                                    <td th:text="${buku.id_buku}" class="col-xs-1 col-sm-1 col-lg-1">Kode Buku</td>
+                                    <td th:text="${buku.judul}" class="col-xs-2 col-sm-2 col-lg-2">Judul</td>
+                                    <td th:text="${buku.pengarang}" class="col-xs-2 col-sm-2 col-lg-2">Pengarang</td>
+                                    <td th:text="${buku.penerbit}" class="col-xs-2 col-sm-2 col-lg-2">Penerbit</td>
+                                    <td th:text="${buku.tahun_terbit}" class="col-xs-1 col-sm-1 col-lg-1">Tahun Terbit</td>
+                                    <td th:text="${buku.kategori}" class="col-xs-1 col-sm-1 col-lg-1"> Kategori</td>
+                                    <td th:text="${buku.jumlah_buku}" class="col-xs-1 col-sm-1 col-lg-1">Jumlah</td>
+                                    <td class="col-xs-2 col-sm-2 col-lg-2">
+                                        <a class="btn btn-primary"  th:href="${'/buku/edit/'+buku.id_buku}"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                                        <a class="btn btn-danger"  th:href="${'/buku/delete/'+buku.id_buku}"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <footer id="admin-footer" class="clearfix">
+                    <div class="pull-left"><b>Copyright </b>&copy; 2017</div>
+                    <div class="pull-right">Admin System</div>
+                </footer>
+
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+
+<th:block layout:fragment="script">
+    <script th:src="@{/bootstrap/js/bootstrap-datepicker.min.js}"></script>
+    <script th:src="@{/js/jquery.min.js}"></script>
+    <script th:src="@{/js/bootstrap.min.js}"></script>
+    <script th:src="@{/js/default.js}"></script>
+</th:block>
+</body>
+</html>
