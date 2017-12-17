@@ -165,63 +165,24 @@
                                         </select>
                                     </td>
                                 </tr>
+                                <tr>
+                                    <td style="padding-top: 10px"></td>
+                                    <td style="padding: 10px 20px 0 20px;"></td>
+                                    <td style="padding-top: 10px">
+                                        <div class="clearfix">
+                                            <button type="submit" class="btn btn-default" href="/peminjaman">Save</button>
+                                        </div>
+                                    </td>
+                                </tr>
 
                             </table>
-                            <div class="clearfix">
-                                <button type="submit" class="btn btn-primary pull-right" href="/peminjaman">Save</button>
-                            </div>
+
 
                         </div>
                     </form>
                     </div>
                 </div>
 
-            <!--</form>-->
-
-
-            <!--<div class="row">-->
-                <!--<div class="col-sm-6">-->
-                    <!--<h2>Cari Data Anggota</h2>-->
-                    <!--<form th:object="${anggota}" th:action="@{/peminjaman/create}" method="get">-->
-                        <!--<input type="text" name="search" id="search" placeholder="Id Anggota"/>-->
-                        <!--<input type="submit" value="Search"/>-->
-                        <!--<div th:if="${not #lists.isEmpty(search)}">-->
-                            <!--<h3>Detail Anggota</h3>-->
-                            <!--<table class="table table-striped ">-->
-                                <!--<tr>-->
-                                    <!--<th>Id</th>-->
-                                    <!--<th>Nama</th>-->
-                                <!--</tr>-->
-                                <!--<tr th:each="anggota: ${search}">-->
-                                    <!--<td th:text="${anggota.id}"><a href="/anggota/${anggota.id}">Id Anggota</a></td>-->
-                                    <!--<td th:text="${anggota.nama}">nama</td>-->
-                                <!--</tr>-->
-                            <!--</table>-->
-                        <!--</div>-->
-                    <!--</form>-->
-                <!--</div>-->
-                <!--<div class="col-sm-6">-->
-                    <!--<h2>Cari Data Buku</h2>-->
-                    <!--<form th:object="${buku}" th:action="@{/peminjaman/create}" method="get">-->
-                        <!--<input type="text" name="searchBuku" id="searchBuku" placeholder="Id Buku"/>-->
-                        <!--<input type="submit" value="Search"/>-->
-                        <!--<div th:if="${not #lists.isEmpty(searchBuku)}">-->
-                            <!--<h3>Detail Buku</h3>-->
-                            <!--<table class="table table-striped ">-->
-                                <!--<tr>-->
-                                    <!--<th>Id</th>-->
-                                    <!--<th>Judul</th>-->
-                                <!--</tr>-->
-                                <!--<tr th:each="buku: ${searchBuku}">-->
-                                    <!--<td th:text="${buku.id_buku}"><a href="/buku/${buku.id_buku}">Id Buku</a></td>-->
-                                    <!--<td th:text="${buku.judul}">Judul</td>-->
-                                <!--</tr>-->
-                            <!--</table>-->
-                        <!--</div>-->
-                    <!--</form>-->
-                <!--</div>-->
-
-            <!--</div>-->
 
             <div class="row">
                 <footer id="admin-footer" class="clearfix">

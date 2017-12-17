@@ -39,5 +39,14 @@ public class PeminjamanDao implements PeminjamanService {
         return em.find(Peminjaman.class,id_pinjam);
     }
 
+    @Override
+    public void deletePeminjaman(Integer id_pinjam) {
+        EntityManager emf = eMF.createEntityManager();
+        emf.getTransaction().begin();
+        emf.remove(emf.find(Peminjaman.class,id_pinjam));
+        emf.getTransaction().commit();
+    }
+
+    
 
 }

@@ -10,5 +10,7 @@ public interface PeminjamanService{
     Peminjaman savePeminjaman(Peminjaman peminjaman);
 
     Peminjaman getIdPeminjaman(Integer id_pinjam);
+    
+     public void deletePeminjaman(Integer id_pinjam);
 }
 

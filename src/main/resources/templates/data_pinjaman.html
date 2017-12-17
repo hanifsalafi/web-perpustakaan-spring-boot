@@ -114,11 +114,11 @@
                                     <tr>
                                         <th class="col-xs-1 col-sm-1 col-lg-1">Id Pinjam</th>
                                         <th class="col-xs-2 col-sm-2 col-lg-2">Id Anggota</th>
-                                        <th class="col-xs-2 col-sm-2 col-lg-2">Kode Buku</th>
-                                        <th class="col-xs-2 col-sm-2 col-lg-2" style="padding-left:20px;">Tanggal Pinjam</th>
-                                        <th class="col-xs-2 col-sm-2 col-lg-2" style="padding-left:27px;">Tanggal Kembali</th>
-                                        <th class="col-xs-2 col-sm-2 col-lg-2" style="padding-left:32px;">Status</th>
-                                        <th class="col-xs-1 col-sm-1 col-lg-1" style="padding-left:40px;">Action</th>
+                                        <th class="col-xs-2 col-sm-2 col-lg-2" style="padding-left:13px;">Kode Buku</th>
+                                        <th class="col-xs-2 col-sm-2 col-lg-2" style="padding-left:15px;">Tanggal Pinjam</th>
+                                        <th class="col-xs-2 col-sm-2 col-lg-2" style="padding-left:17px;">Tanggal Kembali</th>
+                                        <th class="col-xs-1 col-sm-1 col-lg-1" style="padding-left:20px;">Status</th>
+                                        <th class="col-xs-2 col-sm-2 col-lg-2" style="padding-left:40px;">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -128,9 +128,10 @@
                                     <td class="col-xs-2 col-sm-2 col-lg-2" th:text="${pinjam.id_buku}">Kode Buku</td>
                                     <td class="col-xs-2 col-sm-2 col-lg-2" th:text="${pinjam.tanggal_pinjam}">Tanggal Pinjam</td>
                                     <td class="col-xs-2 col-sm-2 col-lg-2" th:text="${pinjam.tanggal_kembali}">Tanggal Kembali</td>
-                                    <td class="col-xs-2 col-sm-2 col-lg-2" th:text="${pinjam.status}">Status</td>
-                                    <td class="col-xs-1 col-sm-1 col-lg-1">
+                                    <td class="col-xs-1 col-sm-1 col-lg-1" th:text="${pinjam.status}">Status</td>
+                                    <td class="col-xs-2 col-sm-2 col-lg-2" style="padding-left:23px;">
                                         <a class="btn btn-primary"  th:href="${'/peminjaman/edit/'+ pinjam.id_pinjam}"><i class="fa fa-undo" aria-hidden="true"></i></a>
+                                        <a class="btn btn-danger"  th:href="${'/peminjaman/delete/'+pinjam.id_pinjam}"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a>
                                     </td>
                                 </tr>
                                 </tbody>

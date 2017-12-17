@@ -61,6 +61,12 @@ public class PeminjamanController {
         model.addAttribute(PEMINJAMAN, peminjamanService.getIdPeminjaman(id_pinjam));
         return "pengembalian";
     }
+        
+    @RequestMapping(value = "/peminjaman/delete/{idPinjam}")
+    public String deletePeminjaman(@PathVariable Integer idPinjam, Model model){
+        peminjamanService.deletePeminjaman(idPinjam);
+        return "redirect:/peminjaman";
+    }
 
 
 }
