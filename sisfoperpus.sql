@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 18 Des 2017 pada 03.29
+-- Generation Time: 18 Des 2017 pada 03.39
 -- Versi Server: 10.1.28-MariaDB
 -- PHP Version: 7.1.11
 
@@ -37,6 +37,15 @@ CREATE TABLE `anggota` (
   `opt_version` int(11) DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data untuk tabel `anggota`
+--
+
+INSERT INTO `anggota` (`id`, `nama`, `nomor_telepon`, `email`, `status`, `opt_version`) VALUES
+(13, 'hanif salafi', '08968875', 'hanif@gmail.com', 'mahasiswa', 0),
+(14, 'dzulfi', '098542323', 'dzulfi@gmail.com', 'dosen', 0),
+(15, 'Adhitia', '0858768897', 'adhit@gmail.com', 'karyawan', 0);
+
 -- --------------------------------------------------------
 
 --
@@ -54,6 +63,15 @@ CREATE TABLE `buku` (
   `opt_version` int(11) DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data untuk tabel `buku`
+--
+
+INSERT INTO `buku` (`id_buku`, `judul`, `pengarang`, `penerbit`, `tahun_terbit`, `kategori`, `jumlah_buku`, `opt_version`) VALUES
+(123, 'impal', 'hanif', 'telkom', 2017, 'teknologi', 100, 0),
+(1212, 'BASDAT', 'adhitia', 'telkom', 2017, 'teknologi', 23, 0),
+(1214, 'Desain UI/UX', 'dzulfi', 'TELKOM', 2017, 'seni', 25, 0);
+
 -- --------------------------------------------------------
 
 --
@@ -69,6 +87,15 @@ CREATE TABLE `peminjaman` (
   `status` varchar(30) DEFAULT NULL,
   `opt_version` int(11) DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `peminjaman`
+--
+
+INSERT INTO `peminjaman` (`id_pinjam`, `id_anggota`, `id_buku`, `tanggal_pinjam`, `tanggal_kembali`, `status`, `opt_version`) VALUES
+(25, 13, 123, '2017-12-18', '2017-12-20', 'dikembalikan', 1),
+(26, 14, 1212, '2017-12-19', '2017-12-26', 'dipinjam', 0),
+(27, 15, 1214, '2017-12-19', '2017-12-29', 'dipinjam', 0);
 
 -- --------------------------------------------------------
 
@@ -175,13 +202,13 @@ ALTER TABLE `user_role`
 -- AUTO_INCREMENT for table `anggota`
 --
 ALTER TABLE `anggota`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `peminjaman`
 --
 ALTER TABLE `peminjaman`
-  MODIFY `id_pinjam` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id_pinjam` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
