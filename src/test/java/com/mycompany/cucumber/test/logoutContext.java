@@ -23,7 +23,10 @@ public class logoutContext {
 
     @Dengan("^berada di dalam website perpustakaan$")
     public void berada_di_dalam_website_perpustakaan() throws Throwable {
-         driver.navigate().to("http://localhost:8080/");         
+        driver.get("http://localhost:8080/login");    
+        driver.findElement(By.id("username")).sendKeys("admin");
+        driver.findElement(By.id("password")).sendKeys("admin");
+        driver.findElement(By.id("login")).click();
     }
 
     @Ketika("^di klik tombol logout$")

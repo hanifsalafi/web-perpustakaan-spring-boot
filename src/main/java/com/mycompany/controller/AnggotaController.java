@@ -20,7 +20,6 @@ public class AnggotaController {
         this.anggotaService = anggotaService;
     }
 
-
     @RequestMapping(value = "/anggota")
     public String showAnggota(Model model) {
         model.addAttribute(ANGGOTA, anggotaService.listAnggota());

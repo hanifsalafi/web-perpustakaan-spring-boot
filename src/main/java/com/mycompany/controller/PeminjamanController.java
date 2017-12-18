@@ -51,7 +51,6 @@ public class PeminjamanController {
 
     @RequestMapping(value = "/peminjaman/create", method = RequestMethod.POST)
     public String addPeminjaman(Model model, Peminjaman peminjaman) {
-        //model.addAttribute("anggota", anggotaService.listAnggota());
         model.addAttribute(PEMINJAMAN, peminjamanService.savePeminjaman(peminjaman));
         return "redirect:/peminjaman";
     }
