@@ -1,0 +1,211 @@
+<html><head><title>Simple Invocation Tree [C]</title><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/></head><body bgcolor="#ffffff" TEXT="#000000"><h2>Simple Invocation Tree</h2><hr><pre>
+</pre><table BORDER CELLPADDING=4><tr><td>Non-Alpha</td><td>A</td><td>B</td><td><a href="simpleinvtree_C.html">C</a></td><td>D</td><td>E</td><td>F</td><td>G</td><td>H</td><td>I</td><td>J</td><td>K</td><td>L</td><td>M</td><td>N</td><td>O</td><td>P</td><td>Q</td><td>R</td><td>S</td><td>T</td><td>U</td><td>V</td><td>W</td><td>X</td><td>Y</td><td>Z</td></tr></table><pre>
+
+<a href="dictionary_C.html#26319">com.mycompany.configuration.SecurityConfig.configure</a>
+| <a href="dictionary_A.html#26323">authorizeRequests</a>
+| <a href="dictionary_A.html#26321">anyRequest</a>
+| <a href="dictionary_A.html#26322">authenticated</a>
+| <a href="dictionary_A.html#26320">and</a>
+| <a href="dictionary_F.html#26325">formLogin</a>
+| <a href="dictionary_L.html#26326">loginPage</a>
+| <a href="dictionary_P.html#26328">permitAll</a>
+| <a href="dictionary_D.html#26324">defaultSuccessUrl</a>
+| <a href="dictionary_L.html#26327">logout</a>
+
+<a href="dictionary_C.html#26330">com.mycompany.configuration.SecurityConfig.configureGlobal</a>
+| <a href="dictionary_J.html#26333">jdbcAuthentication</a>
+| <a href="dictionary_D.html#26332">dataSource</a>
+| <a href="dictionary_U.html#26334">usersByUsernameQuery</a>
+| <a href="dictionary_A.html#26331">authoritiesByUsernameQuery</a>
+
+<a href="dictionary_C.html#14945">com.mycompany.configuration.WebConfig.addViewControllers</a>
+| <a href="dictionary_A.html#14946">addViewController</a>
+| <a href="dictionary_S.html#14947">setViewName</a>
+
+<a href="dictionary_C.html#23737">com.mycompany.controller.AnggotaController.deleteAnggota</a>
+| <a href="dictionary_C.html#56">com.mycompany.service.AnggotaService.deleteAnggota</a><i>  (Virtual)</i>
+| <a href="dictionary_C.html#3">com.mycompany.data.AnggotaDao.deleteAnggota</a><i>  (Virtual)</i>
+
+<a href="dictionary_C.html#23740">com.mycompany.controller.AnggotaController.editAnggota</a>
+| <a href="dictionary_C.html#57">com.mycompany.service.AnggotaService.getIdAnggota</a><i>  (Virtual)</i>
+| <a href="dictionary_C.html#12">com.mycompany.data.AnggotaDao.getIdAnggota</a><i>  (Virtual)</i>
+| <a href="dictionary_A.html#20715">addAttribute</a>
+
+<a href="dictionary_C.html#23743">com.mycompany.controller.AnggotaController.newMahasiswa</a>
+| <a href="dictionary_A.html#20715">addAttribute</a>
+
+<a href="dictionary_C.html#23745">com.mycompany.controller.AnggotaController.saveMahasiswa</a>
+| <a href="dictionary_C.html#61">com.mycompany.service.AnggotaService.saveAnggota</a><i>  (Virtual)</i>
+| <a href="dictionary_C.html#21">com.mycompany.data.AnggotaDao.saveAnggota</a><i>  (Virtual)</i>
+| <a href="dictionary_A.html#20715">addAttribute</a>
+
+<a href="dictionary_C.html#23750">com.mycompany.controller.AnggotaController.showAnggota</a>
+| <a href="dictionary_C.html#58">com.mycompany.service.AnggotaService.listAnggota</a><i>  (Virtual)</i>
+| <a href="dictionary_C.html#15">com.mycompany.data.AnggotaDao.listAnggota</a><i>  (Virtual)</i>
+| <a href="dictionary_A.html#20715">addAttribute</a>
+
+<a href="dictionary_C.html#29867">com.mycompany.controller.BukuController.deleteBuku</a>
+| <a href="dictionary_C.html#15978">com.mycompany.service.BukuService.deleteBuku</a><i>  (Virtual)</i>
+| <a href="dictionary_C.html#15960">com.mycompany.data.BukuDao.deleteBuku</a><i>  (Virtual)</i>
+
+<a href="dictionary_C.html#29870">com.mycompany.controller.BukuController.editBuku</a>
+| <a href="dictionary_C.html#15979">com.mycompany.service.BukuService.getIdBuku</a><i>  (Virtual)</i>
+| <a href="dictionary_C.html#15963">com.mycompany.data.BukuDao.getIdBuku</a><i>  (Virtual)</i>
+| <a href="dictionary_A.html#20715">addAttribute</a>
+
+<a href="dictionary_C.html#29875">com.mycompany.controller.BukuController.showBuku</a>
+| <a href="dictionary_C.html#15980">com.mycompany.service.BukuService.listBuku</a><i>  (Virtual)</i>
+| <a href="dictionary_C.html#15966">com.mycompany.data.BukuDao.listBuku</a><i>  (Virtual)</i>
+| <a href="dictionary_A.html#20715">addAttribute</a>
+
+<a href="dictionary_C.html#29877">com.mycompany.controller.BukuController.tambahBuku</a>
+| <a href="dictionary_A.html#20715">addAttribute</a>
+
+<a href="dictionary_C.html#29879">com.mycompany.controller.BukuController.tambahBuku</a>
+| <a href="dictionary_C.html#15981">com.mycompany.service.BukuService.simpanBuku</a><i>  (Virtual)</i>
+| <a href="dictionary_C.html#15970">com.mycompany.data.BukuDao.simpanBuku</a><i>  (Virtual)</i>
+| <a href="dictionary_A.html#20715">addAttribute</a>
+
+<a href="dictionary_C.html#20714">com.mycompany.controller.PeminjamanController.addPeminjaman</a>
+| <a href="dictionary_C.html#58">com.mycompany.service.AnggotaService.listAnggota</a><i>  (Virtual)</i>
+| <a href="dictionary_C.html#15">com.mycompany.data.AnggotaDao.listAnggota</a><i>  (Virtual)</i>
+| <a href="dictionary_A.html#20715">addAttribute</a>
+| <a href="dictionary_C.html#15980">com.mycompany.service.BukuService.listBuku</a><i>  (Virtual)</i>
+| <a href="dictionary_C.html#15966">com.mycompany.data.BukuDao.listBuku</a><i>  (Virtual)</i>
+
+<a href="dictionary_C.html#20717">com.mycompany.controller.PeminjamanController.addPeminjaman</a>
+| <a href="dictionary_C.html#14703">com.mycompany.service.PeminjamanService.savePeminjaman</a><i>  (Virtual)</i>
+| <a href="dictionary_C.html#14692">com.mycompany.data.PeminjamanDao.savePeminjaman</a><i>  (Virtual)</i>
+| <a href="dictionary_A.html#20715">addAttribute</a>
+
+<a href="dictionary_C.html#20720">com.mycompany.controller.PeminjamanController.deletePeminjaman</a>
+| <a href="dictionary_C.html#14700">com.mycompany.service.PeminjamanService.deletePeminjaman</a><i>  (Virtual)</i>
+| <a href="dictionary_C.html#14684">com.mycompany.data.PeminjamanDao.deletePeminjaman</a><i>  (Virtual)</i>
+
+<a href="dictionary_C.html#20723">com.mycompany.controller.PeminjamanController.editPeminjaman</a>
+| <a href="dictionary_C.html#14701">com.mycompany.service.PeminjamanService.getIdPeminjaman</a><i>  (Virtual)</i>
+| <a href="dictionary_C.html#14687">com.mycompany.data.PeminjamanDao.getIdPeminjaman</a><i>  (Virtual)</i>
+| <a href="dictionary_A.html#20715">addAttribute</a>
+
+<a href="dictionary_C.html#20732">com.mycompany.controller.PeminjamanController.showPeminjaman</a>
+| <a href="dictionary_C.html#14702">com.mycompany.service.PeminjamanService.listPeminjaman</a><i>  (Virtual)</i>
+| <a href="dictionary_C.html#14690">com.mycompany.data.PeminjamanDao.listPeminjaman</a><i>  (Virtual)</i>
+| <a href="dictionary_A.html#20715">addAttribute</a>
+
+<a href="dictionary_C.html#5284">com.mycompany.cucumber.test.loginContext.jika_di_klik_tombol_login_akan_masuk_ke_website</a>
+| <a href="dictionary_I.html#5287">id</a>
+| <a href="dictionary_F.html#5286">findElement</a>
+| <a href="dictionary_C.html#5285">click</a>
+
+<a href="dictionary_C.html#5288">com.mycompany.cucumber.test.loginContext.jika_di_klik_tombol_login_tidak_akan_masuk_ke_website</a>
+| <a href="dictionary_I.html#5287">id</a>
+| <a href="dictionary_F.html#5286">findElement</a>
+| <a href="dictionary_C.html#5285">click</a>
+
+<a href="dictionary_C.html#5289">com.mycompany.cucumber.test.loginContext.masuk_ke_website_perpustakaan</a>
+| <a href="dictionary_G.html#5290">get</a>
+
+<a href="dictionary_C.html#5291">com.mycompany.cucumber.test.loginContext.masukkan_password_pada_field_password</a>
+| <a href="dictionary_I.html#5287">id</a>
+| <a href="dictionary_F.html#5286">findElement</a>
+| <a href="dictionary_S.html#5292">sendKeys</a>
+
+<a href="dictionary_C.html#5294">com.mycompany.cucumber.test.loginContext.masukkan_username_pada_field_username</a>
+| <a href="dictionary_I.html#5287">id</a>
+| <a href="dictionary_F.html#5286">findElement</a>
+| <a href="dictionary_S.html#5292">sendKeys</a>
+
+<a href="dictionary_C.html#23066">com.mycompany.cucumber.test.logoutContext.akan_keluar_dari_website</a>
+| <a href="dictionary_Q.html#23067">quit</a>
+
+<a href="dictionary_C.html#23068">com.mycompany.cucumber.test.logoutContext.berada_di_dalam_website_perpustakaan</a>
+| <a href="dictionary_G.html#5290">get</a>
+| <a href="dictionary_I.html#5287">id</a>
+| <a href="dictionary_F.html#5286">findElement</a>
+| <a href="dictionary_S.html#5292">sendKeys</a>
+| <a href="dictionary_C.html#5285">click</a>
+
+<a href="dictionary_C.html#23069">com.mycompany.cucumber.test.logoutContext.di_klik_tombol_logout</a>
+| <a href="dictionary_I.html#5287">id</a>
+| <a href="dictionary_F.html#5286">findElement</a>
+| <a href="dictionary_C.html#5285">click</a>
+
+<a href="dictionary_C.html#3">com.mycompany.data.AnggotaDao.deleteAnggota</a>
+| <a href="dictionary_C.html#6">createEntityManager</a>
+| <a href="dictionary_G.html#8">getTransaction</a>
+| <a href="dictionary_B.html#4">begin</a>
+| <a href="dictionary_F.html#7">find</a>
+| <a href="dictionary_R.html#9">remove</a>
+| <a href="dictionary_C.html#5">commit</a>
+
+<a href="dictionary_C.html#12">com.mycompany.data.AnggotaDao.getIdAnggota</a>
+| <a href="dictionary_C.html#6">createEntityManager</a>
+| <a href="dictionary_F.html#7">find</a>
+
+<a href="dictionary_C.html#15">com.mycompany.data.AnggotaDao.listAnggota</a>
+| <a href="dictionary_C.html#6">createEntityManager</a>
+| <a href="dictionary_C.html#16">createQuery</a>
+| <a href="dictionary_G.html#17">getResultList</a>
+
+<a href="dictionary_C.html#19">com.mycompany.data.AnggotaDao.listAnggotabyId</a>
+| <a href="dictionary_C.html#60">com.mycompany.repository.AnggotaRepository.findById</a>
+
+<a href="dictionary_C.html#21">com.mycompany.data.AnggotaDao.saveAnggota</a>
+| <a href="dictionary_C.html#6">createEntityManager</a>
+| <a href="dictionary_G.html#8">getTransaction</a>
+| <a href="dictionary_B.html#4">begin</a>
+| <a href="dictionary_M.html#22">merge</a>
+| <a href="dictionary_C.html#5">commit</a>
+
+<a href="dictionary_C.html#15960">com.mycompany.data.BukuDao.deleteBuku</a>
+| <a href="dictionary_C.html#6">createEntityManager</a>
+| <a href="dictionary_G.html#8">getTransaction</a>
+| <a href="dictionary_B.html#4">begin</a>
+| <a href="dictionary_F.html#7">find</a>
+| <a href="dictionary_R.html#9">remove</a>
+| <a href="dictionary_C.html#5">commit</a>
+
+<a href="dictionary_C.html#15963">com.mycompany.data.BukuDao.getIdBuku</a>
+| <a href="dictionary_C.html#6">createEntityManager</a>
+| <a href="dictionary_F.html#7">find</a>
+
+<a href="dictionary_C.html#15966">com.mycompany.data.BukuDao.listBuku</a>
+| <a href="dictionary_C.html#6">createEntityManager</a>
+| <a href="dictionary_C.html#16">createQuery</a>
+| <a href="dictionary_G.html#17">getResultList</a>
+
+<a href="dictionary_C.html#15970">com.mycompany.data.BukuDao.simpanBuku</a>
+| <a href="dictionary_C.html#6">createEntityManager</a>
+| <a href="dictionary_G.html#8">getTransaction</a>
+| <a href="dictionary_B.html#4">begin</a>
+| <a href="dictionary_M.html#22">merge</a>
+| <a href="dictionary_C.html#5">commit</a>
+
+<a href="dictionary_C.html#14684">com.mycompany.data.PeminjamanDao.deletePeminjaman</a>
+| <a href="dictionary_C.html#6">createEntityManager</a>
+| <a href="dictionary_G.html#8">getTransaction</a>
+| <a href="dictionary_B.html#4">begin</a>
+| <a href="dictionary_F.html#7">find</a>
+| <a href="dictionary_R.html#9">remove</a>
+| <a href="dictionary_C.html#5">commit</a>
+
+<a href="dictionary_C.html#14687">com.mycompany.data.PeminjamanDao.getIdPeminjaman</a>
+| <a href="dictionary_C.html#6">createEntityManager</a>
+| <a href="dictionary_F.html#7">find</a>
+
+<a href="dictionary_C.html#14690">com.mycompany.data.PeminjamanDao.listPeminjaman</a>
+| <a href="dictionary_C.html#6">createEntityManager</a>
+| <a href="dictionary_C.html#16">createQuery</a>
+| <a href="dictionary_G.html#17">getResultList</a>
+
+<a href="dictionary_C.html#14692">com.mycompany.data.PeminjamanDao.savePeminjaman</a>
+| <a href="dictionary_C.html#6">createEntityManager</a>
+| <a href="dictionary_G.html#8">getTransaction</a>
+| <a href="dictionary_B.html#4">begin</a>
+| <a href="dictionary_M.html#22">merge</a>
+| <a href="dictionary_C.html#5">commit</a>
+
+<a href="dictionary_C.html#26750">com.mycompany.SpringExampleApplication.main</a>
+| <a href="dictionary_R.html#26751">run</a>
+</pre><hr>
+<table BORDER CELLPADDING=4><tr><td>Non-Alpha</td><td>A</td><td>B</td><td><a href="simpleinvtree_C.html">C</a></td><td>D</td><td>E</td><td>F</td><td>G</td><td>H</td><td>I</td><td>J</td><td>K</td><td>L</td><td>M</td><td>N</td><td>O</td><td>P</td><td>Q</td><td>R</td><td>S</td><td>T</td><td>U</td><td>V</td><td>W</td><td>X</td><td>Y</td><td>Z</td></tr></table></body></html>

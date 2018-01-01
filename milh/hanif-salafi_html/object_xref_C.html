@@ -1,0 +1,634 @@
+<html><head><title>Object Cross Reference [C]</title><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/></head><body bgcolor="#ffffff" TEXT="#000000"><h2>Object Cross Reference</h2><hr><pre>
+</pre><table BORDER CELLPADDING=4><tr><td>Non-Alpha</td><td>A</td><td>B</td><td><a href="object_xref_C.html">C</a></td><td>D</td><td>E</td><td>F</td><td><a href="object_xref_G.html">G</a></td><td>H</td><td>I</td><td>J</td><td>K</td><td>L</td><td>M</td><td>N</td><td>O</td><td><a href="object_xref_P.html">P</a></td><td>Q</td><td>R</td><td>S</td><td>T</td><td>U</td><td>V</td><td>W</td><td>X</td><td>Y</td><td>Z</td></tr></table><pre>
+
+<a href="dictionary_C.html#13025">class</a><a name="13025"> </a>   (Unknown Variable)  Declared as: 
+    Use   [<a href="13019.html#19">Test.java, 19</a>]              Test.java
+
+<a href="dictionary_C.html#26329">com.mycompany.configuration.SecurityConfig.configure.http</a><a name="26329"> </a>   (Parameter)  Declared as: HttpSecurity
+    Define   [<a href="26313.html#40">SecurityConfig.java, 40</a>]   <a href="dictionary_C.html#26319">com.mycompany.configuration.SecurityConfig.configure</a>
+    Use   [<a href="26313.html#41">SecurityConfig.java, 41</a>]    <a href="dictionary_C.html#26319">com.mycompany.configuration.SecurityConfig.configure</a>
+
+<a href="dictionary_C.html#26335">com.mycompany.configuration.SecurityConfig.configureGlobal.auth</a><a name="26335"> </a>   (Parameter)  Declared as: AuthenticationManagerBuilder
+    Define   [<a href="26313.html#31">SecurityConfig.java, 31</a>]   <a href="dictionary_C.html#26330">com.mycompany.configuration.SecurityConfig.configureGlobal</a>
+    Use   [<a href="26313.html#32">SecurityConfig.java, 32</a>]    <a href="dictionary_C.html#26330">com.mycompany.configuration.SecurityConfig.configureGlobal</a>
+
+<a href="dictionary_C.html#26338">com.mycompany.configuration.SecurityConfig.ds</a><a name="26338"> </a>   (Private Variable)  Declared as: DataSource
+    Define   [<a href="26313.html#28">SecurityConfig.java, 28</a>]   <a href="dictionary_C.html#26318">com.mycompany.configuration.SecurityConfig</a>
+    Use   [<a href="26313.html#34">SecurityConfig.java, 34</a>]    <a href="dictionary_C.html#26330">com.mycompany.configuration.SecurityConfig.configureGlobal</a>
+
+<a href="dictionary_C.html#26336">com.mycompany.configuration.SecurityConfig.SQL_LOGIN</a><a name="26336"> </a>   (Private Static Variable)  Declared as: String=&quot;select username,password, active as enabled &quot; + &quot;from user where username = ?&quot;
+    Define   [<a href="26313.html#17">SecurityConfig.java, 17</a>]   <a href="dictionary_C.html#26318">com.mycompany.configuration.SecurityConfig</a>
+    Set   [<a href="26313.html#17">SecurityConfig.java, 17</a>]    <a href="dictionary_C.html#26318">com.mycompany.configuration.SecurityConfig</a>
+    Use   [<a href="26313.html#35">SecurityConfig.java, 35</a>]    <a href="dictionary_C.html#26330">com.mycompany.configuration.SecurityConfig.configureGlobal</a>
+
+<a href="dictionary_C.html#26337">com.mycompany.configuration.SecurityConfig.SQL_PERMISSION</a><a name="26337"> </a>   (Private Static Variable)  Declared as: String=&quot;select u.username, r.nama as authority &quot; + &quot;from user u join user_role ur on u.id_user = ur.id_user &quot; + &quot;join role r on ur.id_role = r.id_role &quot; + &quot;where u.username = ?&quot;
+    Define   [<a href="26313.html#21">SecurityConfig.java, 21</a>]   <a href="dictionary_C.html#26318">com.mycompany.configuration.SecurityConfig</a>
+    Set   [<a href="26313.html#21">SecurityConfig.java, 21</a>]    <a href="dictionary_C.html#26318">com.mycompany.configuration.SecurityConfig</a>
+    Use   [<a href="26313.html#36">SecurityConfig.java, 36</a>]    <a href="dictionary_C.html#26330">com.mycompany.configuration.SecurityConfig.configureGlobal</a>
+
+<a href="dictionary_C.html#14948">com.mycompany.configuration.WebConfig.addViewControllers.registry</a><a name="14948"> </a>   (Parameter)  Declared as: ViewControllerRegistry
+    Define   [<a href="14941.html#11">WebConfig.java, 11</a>]      <a href="dictionary_C.html#14945">com.mycompany.configuration.WebConfig.addViewControllers</a>
+    Use   [<a href="14941.html#12">WebConfig.java, 12</a>]         <a href="dictionary_C.html#14945">com.mycompany.configuration.WebConfig.addViewControllers</a>
+
+<a href="dictionary_C.html#23752">com.mycompany.controller.AnggotaController.ANGGOTA</a><a name="23752"> </a>   (Private Variable)  Declared as: String=&quot;anggota&quot;
+    Define   [<a href="23735.html#16">AnggotaController.java, 16</a>]   <a href="dictionary_C.html#23736">com.mycompany.controller.AnggotaController</a>
+    Set   [<a href="23735.html#16">AnggotaController.java, 16</a>]   <a href="dictionary_C.html#23736">com.mycompany.controller.AnggotaController</a>
+    Use   [<a href="23735.html#43">AnggotaController.java, 43</a>]   <a href="dictionary_C.html#23740">com.mycompany.controller.AnggotaController.editAnggota</a>
+    Use   [<a href="23735.html#31">AnggotaController.java, 31</a>]   <a href="dictionary_C.html#23743">com.mycompany.controller.AnggotaController.newMahasiswa</a>
+    Use   [<a href="23735.html#37">AnggotaController.java, 37</a>]   <a href="dictionary_C.html#23745">com.mycompany.controller.AnggotaController.saveMahasiswa</a>
+    Use   [<a href="23735.html#25">AnggotaController.java, 25</a>]   <a href="dictionary_C.html#23750">com.mycompany.controller.AnggotaController.showAnggota</a>
+
+<a href="dictionary_C.html#23753">com.mycompany.controller.AnggotaController.anggotaService</a><a name="23753"> </a>   (Private Variable)  Declared as: AnggotaService
+    Define   [<a href="23735.html#15">AnggotaController.java, 15</a>]   <a href="dictionary_C.html#23736">com.mycompany.controller.AnggotaController</a>
+    Use   [<a href="23735.html#49">AnggotaController.java, 49</a>]   <a href="dictionary_C.html#23737">com.mycompany.controller.AnggotaController.deleteAnggota</a>
+    Use   [<a href="23735.html#43">AnggotaController.java, 43</a>]   <a href="dictionary_C.html#23740">com.mycompany.controller.AnggotaController.editAnggota</a>
+    Use   [<a href="23735.html#37">AnggotaController.java, 37</a>]   <a href="dictionary_C.html#23745">com.mycompany.controller.AnggotaController.saveMahasiswa</a>
+    Set   [<a href="23735.html#20">AnggotaController.java, 20</a>]   <a href="dictionary_C.html#23748">com.mycompany.controller.AnggotaController.setAnggotaService</a>
+    Use   [<a href="23735.html#25">AnggotaController.java, 25</a>]   <a href="dictionary_C.html#23750">com.mycompany.controller.AnggotaController.showAnggota</a>
+
+<a href="dictionary_C.html#23738">com.mycompany.controller.AnggotaController.deleteAnggota.id</a><a name="23738"> </a>   (Parameter)  Declared as: Integer
+    Define   [<a href="23735.html#48">AnggotaController.java, 48</a>]   <a href="dictionary_C.html#23737">com.mycompany.controller.AnggotaController.deleteAnggota</a>
+    Use   [<a href="23735.html#49">AnggotaController.java, 49</a>]   <a href="dictionary_C.html#23737">com.mycompany.controller.AnggotaController.deleteAnggota</a>
+
+<a href="dictionary_C.html#23739">com.mycompany.controller.AnggotaController.deleteAnggota.model</a><a name="23739"> </a>   (Parameter)  Declared as: Model
+    Define   [<a href="23735.html#48">AnggotaController.java, 48</a>]   <a href="dictionary_C.html#23737">com.mycompany.controller.AnggotaController.deleteAnggota</a>
+
+<a href="dictionary_C.html#23741">com.mycompany.controller.AnggotaController.editAnggota.id</a><a name="23741"> </a>   (Parameter)  Declared as: Integer
+    Define   [<a href="23735.html#42">AnggotaController.java, 42</a>]   <a href="dictionary_C.html#23740">com.mycompany.controller.AnggotaController.editAnggota</a>
+    Use   [<a href="23735.html#43">AnggotaController.java, 43</a>]   <a href="dictionary_C.html#23740">com.mycompany.controller.AnggotaController.editAnggota</a>
+
+<a href="dictionary_C.html#23742">com.mycompany.controller.AnggotaController.editAnggota.model</a><a name="23742"> </a>   (Parameter)  Declared as: Model
+    Define   [<a href="23735.html#42">AnggotaController.java, 42</a>]   <a href="dictionary_C.html#23740">com.mycompany.controller.AnggotaController.editAnggota</a>
+    Use   [<a href="23735.html#43">AnggotaController.java, 43</a>]   <a href="dictionary_C.html#23740">com.mycompany.controller.AnggotaController.editAnggota</a>
+
+<a href="dictionary_C.html#23744">com.mycompany.controller.AnggotaController.newMahasiswa.model</a><a name="23744"> </a>   (Parameter)  Declared as: Model
+    Define   [<a href="23735.html#30">AnggotaController.java, 30</a>]   <a href="dictionary_C.html#23743">com.mycompany.controller.AnggotaController.newMahasiswa</a>
+    Use   [<a href="23735.html#31">AnggotaController.java, 31</a>]   <a href="dictionary_C.html#23743">com.mycompany.controller.AnggotaController.newMahasiswa</a>
+
+<a href="dictionary_C.html#23746">com.mycompany.controller.AnggotaController.saveMahasiswa.anggota</a><a name="23746"> </a>   (Parameter)  Declared as: Anggota
+    Define   [<a href="23735.html#36">AnggotaController.java, 36</a>]   <a href="dictionary_C.html#23745">com.mycompany.controller.AnggotaController.saveMahasiswa</a>
+    Use   [<a href="23735.html#37">AnggotaController.java, 37</a>]   <a href="dictionary_C.html#23745">com.mycompany.controller.AnggotaController.saveMahasiswa</a>
+
+<a href="dictionary_C.html#23747">com.mycompany.controller.AnggotaController.saveMahasiswa.model</a><a name="23747"> </a>   (Parameter)  Declared as: Model
+    Define   [<a href="23735.html#36">AnggotaController.java, 36</a>]   <a href="dictionary_C.html#23745">com.mycompany.controller.AnggotaController.saveMahasiswa</a>
+    Use   [<a href="23735.html#37">AnggotaController.java, 37</a>]   <a href="dictionary_C.html#23745">com.mycompany.controller.AnggotaController.saveMahasiswa</a>
+
+<a href="dictionary_C.html#23749">com.mycompany.controller.AnggotaController.setAnggotaService.anggotaService</a><a name="23749"> </a>   (Parameter)  Declared as: AnggotaService
+    Define   [<a href="23735.html#19">AnggotaController.java, 19</a>]   <a href="dictionary_C.html#23748">com.mycompany.controller.AnggotaController.setAnggotaService</a>
+    Use   [<a href="23735.html#20">AnggotaController.java, 20</a>]   <a href="dictionary_C.html#23748">com.mycompany.controller.AnggotaController.setAnggotaService</a>
+
+<a href="dictionary_C.html#23751">com.mycompany.controller.AnggotaController.showAnggota.model</a><a name="23751"> </a>   (Parameter)  Declared as: Model
+    Define   [<a href="23735.html#24">AnggotaController.java, 24</a>]   <a href="dictionary_C.html#23750">com.mycompany.controller.AnggotaController.showAnggota</a>
+    Use   [<a href="23735.html#25">AnggotaController.java, 25</a>]   <a href="dictionary_C.html#23750">com.mycompany.controller.AnggotaController.showAnggota</a>
+
+<a href="dictionary_C.html#29882">com.mycompany.controller.BukuController.BUKU</a><a name="29882"> </a>   (Private Variable)  Declared as: String=&quot;buku&quot;
+    Define   [<a href="29865.html#16">BukuController.java, 16</a>]   <a href="dictionary_C.html#29866">com.mycompany.controller.BukuController</a>
+    Set   [<a href="29865.html#16">BukuController.java, 16</a>]    <a href="dictionary_C.html#29866">com.mycompany.controller.BukuController</a>
+    Use   [<a href="29865.html#43">BukuController.java, 43</a>]    <a href="dictionary_C.html#29870">com.mycompany.controller.BukuController.editBuku</a>
+    Use   [<a href="29865.html#25">BukuController.java, 25</a>]    <a href="dictionary_C.html#29875">com.mycompany.controller.BukuController.showBuku</a>
+    Use   [<a href="29865.html#31">BukuController.java, 31</a>]    <a href="dictionary_C.html#29877">com.mycompany.controller.BukuController.tambahBuku</a>
+    Use   [<a href="29865.html#37">BukuController.java, 37</a>]    <a href="dictionary_C.html#29879">com.mycompany.controller.BukuController.tambahBuku</a>
+
+<a href="dictionary_C.html#29883">com.mycompany.controller.BukuController.bukuService</a><a name="29883"> </a>   (Private Variable)  Declared as: BukuService
+    Define   [<a href="29865.html#15">BukuController.java, 15</a>]   <a href="dictionary_C.html#29866">com.mycompany.controller.BukuController</a>
+    Use   [<a href="29865.html#49">BukuController.java, 49</a>]    <a href="dictionary_C.html#29867">com.mycompany.controller.BukuController.deleteBuku</a>
+    Use   [<a href="29865.html#43">BukuController.java, 43</a>]    <a href="dictionary_C.html#29870">com.mycompany.controller.BukuController.editBuku</a>
+    Set   [<a href="29865.html#20">BukuController.java, 20</a>]    <a href="dictionary_C.html#29873">com.mycompany.controller.BukuController.setBukuService</a>
+    Use   [<a href="29865.html#25">BukuController.java, 25</a>]    <a href="dictionary_C.html#29875">com.mycompany.controller.BukuController.showBuku</a>
+    Use   [<a href="29865.html#37">BukuController.java, 37</a>]    <a href="dictionary_C.html#29879">com.mycompany.controller.BukuController.tambahBuku</a>
+
+<a href="dictionary_C.html#29868">com.mycompany.controller.BukuController.deleteBuku.idBuku</a><a name="29868"> </a>   (Parameter)  Declared as: Integer
+    Define   [<a href="29865.html#48">BukuController.java, 48</a>]   <a href="dictionary_C.html#29867">com.mycompany.controller.BukuController.deleteBuku</a>
+    Use   [<a href="29865.html#49">BukuController.java, 49</a>]    <a href="dictionary_C.html#29867">com.mycompany.controller.BukuController.deleteBuku</a>
+
+<a href="dictionary_C.html#29869">com.mycompany.controller.BukuController.deleteBuku.model</a><a name="29869"> </a>   (Parameter)  Declared as: Model
+    Define   [<a href="29865.html#48">BukuController.java, 48</a>]   <a href="dictionary_C.html#29867">com.mycompany.controller.BukuController.deleteBuku</a>
+
+<a href="dictionary_C.html#29871">com.mycompany.controller.BukuController.editBuku.idBuku</a><a name="29871"> </a>   (Parameter)  Declared as: Integer
+    Define   [<a href="29865.html#42">BukuController.java, 42</a>]   <a href="dictionary_C.html#29870">com.mycompany.controller.BukuController.editBuku</a>
+    Use   [<a href="29865.html#43">BukuController.java, 43</a>]    <a href="dictionary_C.html#29870">com.mycompany.controller.BukuController.editBuku</a>
+
+<a href="dictionary_C.html#29872">com.mycompany.controller.BukuController.editBuku.model</a><a name="29872"> </a>   (Parameter)  Declared as: Model
+    Define   [<a href="29865.html#42">BukuController.java, 42</a>]   <a href="dictionary_C.html#29870">com.mycompany.controller.BukuController.editBuku</a>
+    Use   [<a href="29865.html#43">BukuController.java, 43</a>]    <a href="dictionary_C.html#29870">com.mycompany.controller.BukuController.editBuku</a>
+
+<a href="dictionary_C.html#29874">com.mycompany.controller.BukuController.setBukuService.bukuService</a><a name="29874"> </a>   (Parameter)  Declared as: BukuService
+    Define   [<a href="29865.html#19">BukuController.java, 19</a>]   <a href="dictionary_C.html#29873">com.mycompany.controller.BukuController.setBukuService</a>
+    Use   [<a href="29865.html#20">BukuController.java, 20</a>]    <a href="dictionary_C.html#29873">com.mycompany.controller.BukuController.setBukuService</a>
+
+<a href="dictionary_C.html#29876">com.mycompany.controller.BukuController.showBuku.model</a><a name="29876"> </a>   (Parameter)  Declared as: Model
+    Define   [<a href="29865.html#24">BukuController.java, 24</a>]   <a href="dictionary_C.html#29875">com.mycompany.controller.BukuController.showBuku</a>
+    Use   [<a href="29865.html#25">BukuController.java, 25</a>]    <a href="dictionary_C.html#29875">com.mycompany.controller.BukuController.showBuku</a>
+
+<a href="dictionary_C.html#29880">com.mycompany.controller.BukuController.tambahBuku.buku</a><a name="29880"> </a>   (Parameter)  Declared as: Buku
+    Define   [<a href="29865.html#36">BukuController.java, 36</a>]   <a href="dictionary_C.html#29879">com.mycompany.controller.BukuController.tambahBuku</a>
+    Use   [<a href="29865.html#37">BukuController.java, 37</a>]    <a href="dictionary_C.html#29879">com.mycompany.controller.BukuController.tambahBuku</a>
+
+<a href="dictionary_C.html#29878">com.mycompany.controller.BukuController.tambahBuku.model</a><a name="29878"> </a>   (Parameter)  Declared as: Model
+    Define   [<a href="29865.html#30">BukuController.java, 30</a>]   <a href="dictionary_C.html#29877">com.mycompany.controller.BukuController.tambahBuku</a>
+    Use   [<a href="29865.html#31">BukuController.java, 31</a>]    <a href="dictionary_C.html#29877">com.mycompany.controller.BukuController.tambahBuku</a>
+
+<a href="dictionary_C.html#29881">com.mycompany.controller.BukuController.tambahBuku.model</a><a name="29881"> </a>   (Parameter)  Declared as: Model
+    Define   [<a href="29865.html#36">BukuController.java, 36</a>]   <a href="dictionary_C.html#29879">com.mycompany.controller.BukuController.tambahBuku</a>
+    Use   [<a href="29865.html#37">BukuController.java, 37</a>]    <a href="dictionary_C.html#29879">com.mycompany.controller.BukuController.tambahBuku</a>
+
+<a href="dictionary_C.html#20716">com.mycompany.controller.PeminjamanController.addPeminjaman.model</a><a name="20716"> </a>   (Parameter)  Declared as: Model
+    Define   [<a href="20710.html#45">PeminjamanController.java, 45</a>]   <a href="dictionary_C.html#20714">com.mycompany.controller.PeminjamanController.addPeminjaman</a>
+    Use   [<a href="20710.html#46">PeminjamanController.java, 46</a>]   <a href="dictionary_C.html#20714">com.mycompany.controller.PeminjamanController.addPeminjaman</a>
+    Use   [<a href="20710.html#47">PeminjamanController.java, 47</a>]   <a href="dictionary_C.html#20714">com.mycompany.controller.PeminjamanController.addPeminjaman</a>
+    Use   [<a href="20710.html#48">PeminjamanController.java, 48</a>]   <a href="dictionary_C.html#20714">com.mycompany.controller.PeminjamanController.addPeminjaman</a>
+
+<a href="dictionary_C.html#20718">com.mycompany.controller.PeminjamanController.addPeminjaman.model</a><a name="20718"> </a>   (Parameter)  Declared as: Model
+    Define   [<a href="20710.html#53">PeminjamanController.java, 53</a>]   <a href="dictionary_C.html#20717">com.mycompany.controller.PeminjamanController.addPeminjaman</a>
+    Use   [<a href="20710.html#54">PeminjamanController.java, 54</a>]   <a href="dictionary_C.html#20717">com.mycompany.controller.PeminjamanController.addPeminjaman</a>
+
+<a href="dictionary_C.html#20719">com.mycompany.controller.PeminjamanController.addPeminjaman.peminjaman</a><a name="20719"> </a>   (Parameter)  Declared as: Peminjaman
+    Define   [<a href="20710.html#53">PeminjamanController.java, 53</a>]   <a href="dictionary_C.html#20717">com.mycompany.controller.PeminjamanController.addPeminjaman</a>
+    Use   [<a href="20710.html#54">PeminjamanController.java, 54</a>]   <a href="dictionary_C.html#20717">com.mycompany.controller.PeminjamanController.addPeminjaman</a>
+
+<a href="dictionary_C.html#20737">com.mycompany.controller.PeminjamanController.anggotaService</a><a name="20737"> </a>   (Private Variable)  Declared as: AnggotaService
+    Define   [<a href="20710.html#19">PeminjamanController.java, 19</a>]   <a href="dictionary_C.html#20713">com.mycompany.controller.PeminjamanController</a>
+    Use   [<a href="20710.html#46">PeminjamanController.java, 46</a>]   <a href="dictionary_C.html#20714">com.mycompany.controller.PeminjamanController.addPeminjaman</a>
+    Set   [<a href="20710.html#30">PeminjamanController.java, 30</a>]   <a href="dictionary_C.html#20726">com.mycompany.controller.PeminjamanController.setAnggotaService</a>
+
+<a href="dictionary_C.html#20738">com.mycompany.controller.PeminjamanController.bukuService</a><a name="20738"> </a>   (Private Variable)  Declared as: BukuService
+    Define   [<a href="20710.html#20">PeminjamanController.java, 20</a>]   <a href="dictionary_C.html#20713">com.mycompany.controller.PeminjamanController</a>
+    Use   [<a href="20710.html#47">PeminjamanController.java, 47</a>]   <a href="dictionary_C.html#20714">com.mycompany.controller.PeminjamanController.addPeminjaman</a>
+    Set   [<a href="20710.html#35">PeminjamanController.java, 35</a>]   <a href="dictionary_C.html#20728">com.mycompany.controller.PeminjamanController.setBukuService</a>
+
+<a href="dictionary_C.html#20721">com.mycompany.controller.PeminjamanController.deletePeminjaman.idPinjam</a><a name="20721"> </a>   (Parameter)  Declared as: Integer
+    Define   [<a href="20710.html#65">PeminjamanController.java, 65</a>]   <a href="dictionary_C.html#20720">com.mycompany.controller.PeminjamanController.deletePeminjaman</a>
+    Use   [<a href="20710.html#66">PeminjamanController.java, 66</a>]   <a href="dictionary_C.html#20720">com.mycompany.controller.PeminjamanController.deletePeminjaman</a>
+
+<a href="dictionary_C.html#20722">com.mycompany.controller.PeminjamanController.deletePeminjaman.model</a><a name="20722"> </a>   (Parameter)  Declared as: Model
+    Define   [<a href="20710.html#65">PeminjamanController.java, 65</a>]   <a href="dictionary_C.html#20720">com.mycompany.controller.PeminjamanController.deletePeminjaman</a>
+
+<a href="dictionary_C.html#20724">com.mycompany.controller.PeminjamanController.editPeminjaman.id_pinjam</a><a name="20724"> </a>   (Parameter)  Declared as: Integer
+    Define   [<a href="20710.html#59">PeminjamanController.java, 59</a>]   <a href="dictionary_C.html#20723">com.mycompany.controller.PeminjamanController.editPeminjaman</a>
+    Use   [<a href="20710.html#60">PeminjamanController.java, 60</a>]   <a href="dictionary_C.html#20723">com.mycompany.controller.PeminjamanController.editPeminjaman</a>
+
+<a href="dictionary_C.html#20725">com.mycompany.controller.PeminjamanController.editPeminjaman.model</a><a name="20725"> </a>   (Parameter)  Declared as: Model
+    Define   [<a href="20710.html#59">PeminjamanController.java, 59</a>]   <a href="dictionary_C.html#20723">com.mycompany.controller.PeminjamanController.editPeminjaman</a>
+    Use   [<a href="20710.html#60">PeminjamanController.java, 60</a>]   <a href="dictionary_C.html#20723">com.mycompany.controller.PeminjamanController.editPeminjaman</a>
+
+<a href="dictionary_C.html#20735">com.mycompany.controller.PeminjamanController.PEMINJAMAN</a><a name="20735"> </a>   (Private Variable)  Declared as: String=&quot;peminjaman&quot;
+    Define   [<a href="20710.html#21">PeminjamanController.java, 21</a>]   <a href="dictionary_C.html#20713">com.mycompany.controller.PeminjamanController</a>
+    Set   [<a href="20710.html#21">PeminjamanController.java, 21</a>]   <a href="dictionary_C.html#20713">com.mycompany.controller.PeminjamanController</a>
+    Use   [<a href="20710.html#48">PeminjamanController.java, 48</a>]   <a href="dictionary_C.html#20714">com.mycompany.controller.PeminjamanController.addPeminjaman</a>
+    Use   [<a href="20710.html#54">PeminjamanController.java, 54</a>]   <a href="dictionary_C.html#20717">com.mycompany.controller.PeminjamanController.addPeminjaman</a>
+    Use   [<a href="20710.html#60">PeminjamanController.java, 60</a>]   <a href="dictionary_C.html#20723">com.mycompany.controller.PeminjamanController.editPeminjaman</a>
+    Use   [<a href="20710.html#40">PeminjamanController.java, 40</a>]   <a href="dictionary_C.html#20732">com.mycompany.controller.PeminjamanController.showPeminjaman</a>
+
+<a href="dictionary_C.html#20739">com.mycompany.controller.PeminjamanController.peminjamanService</a><a name="20739"> </a>   (Private Variable)  Declared as: PeminjamanService
+    Define   [<a href="20710.html#18">PeminjamanController.java, 18</a>]   <a href="dictionary_C.html#20713">com.mycompany.controller.PeminjamanController</a>
+    Use   [<a href="20710.html#54">PeminjamanController.java, 54</a>]   <a href="dictionary_C.html#20717">com.mycompany.controller.PeminjamanController.addPeminjaman</a>
+    Use   [<a href="20710.html#66">PeminjamanController.java, 66</a>]   <a href="dictionary_C.html#20720">com.mycompany.controller.PeminjamanController.deletePeminjaman</a>
+    Use   [<a href="20710.html#60">PeminjamanController.java, 60</a>]   <a href="dictionary_C.html#20723">com.mycompany.controller.PeminjamanController.editPeminjaman</a>
+    Set   [<a href="20710.html#25">PeminjamanController.java, 25</a>]   <a href="dictionary_C.html#20730">com.mycompany.controller.PeminjamanController.setPeminjamanService</a>
+    Use   [<a href="20710.html#40">PeminjamanController.java, 40</a>]   <a href="dictionary_C.html#20732">com.mycompany.controller.PeminjamanController.showPeminjaman</a>
+
+<a href="dictionary_C.html#20727">com.mycompany.controller.PeminjamanController.setAnggotaService.anggotaService</a><a name="20727"> </a>   (Parameter)  Declared as: AnggotaService
+    Define   [<a href="20710.html#29">PeminjamanController.java, 29</a>]   <a href="dictionary_C.html#20726">com.mycompany.controller.PeminjamanController.setAnggotaService</a>
+    Use   [<a href="20710.html#30">PeminjamanController.java, 30</a>]   <a href="dictionary_C.html#20726">com.mycompany.controller.PeminjamanController.setAnggotaService</a>
+
+<a href="dictionary_C.html#20729">com.mycompany.controller.PeminjamanController.setBukuService.bukuService</a><a name="20729"> </a>   (Parameter)  Declared as: BukuService
+    Define   [<a href="20710.html#34">PeminjamanController.java, 34</a>]   <a href="dictionary_C.html#20728">com.mycompany.controller.PeminjamanController.setBukuService</a>
+    Use   [<a href="20710.html#35">PeminjamanController.java, 35</a>]   <a href="dictionary_C.html#20728">com.mycompany.controller.PeminjamanController.setBukuService</a>
+
+<a href="dictionary_C.html#20731">com.mycompany.controller.PeminjamanController.setPeminjamanService.peminjamanService</a><a name="20731"> </a>   (Parameter)  Declared as: PeminjamanService
+    Define   [<a href="20710.html#24">PeminjamanController.java, 24</a>]   <a href="dictionary_C.html#20730">com.mycompany.controller.PeminjamanController.setPeminjamanService</a>
+    Use   [<a href="20710.html#25">PeminjamanController.java, 25</a>]   <a href="dictionary_C.html#20730">com.mycompany.controller.PeminjamanController.setPeminjamanService</a>
+
+<a href="dictionary_C.html#20733">com.mycompany.controller.PeminjamanController.showPeminjaman.model</a><a name="20733"> </a>   (Parameter)  Declared as: Model
+    Define   [<a href="20710.html#39">PeminjamanController.java, 39</a>]   <a href="dictionary_C.html#20732">com.mycompany.controller.PeminjamanController.showPeminjaman</a>
+    Use   [<a href="20710.html#40">PeminjamanController.java, 40</a>]   <a href="dictionary_C.html#20732">com.mycompany.controller.PeminjamanController.showPeminjaman</a>
+
+<a href="dictionary_C.html#5296">com.mycompany.cucumber.test.loginContext.driver</a><a name="5296"> </a>   (Variable)  Declared as: WebDriver=FirefoxDriver()
+    Define   [<a href="5275.html#23">loginContext.java, 23</a>]   <a href="dictionary_C.html#5283">com.mycompany.cucumber.test.loginContext</a>
+    Set   [<a href="5275.html#23">loginContext.java, 23</a>]      <a href="dictionary_C.html#5283">com.mycompany.cucumber.test.loginContext</a>
+    Use   [<a href="5275.html#41">loginContext.java, 41</a>]      <a href="dictionary_C.html#5284">com.mycompany.cucumber.test.loginContext.jika_di_klik_tombol_login_akan_masuk_ke_website</a>
+    Use   [<a href="5275.html#46">loginContext.java, 46</a>]      <a href="dictionary_C.html#5288">com.mycompany.cucumber.test.loginContext.jika_di_klik_tombol_login_tidak_akan_masuk_ke_website</a>
+    Use   [<a href="5275.html#27">loginContext.java, 27</a>]      <a href="dictionary_C.html#5289">com.mycompany.cucumber.test.loginContext.masuk_ke_website_perpustakaan</a>
+    Use   [<a href="5275.html#36">loginContext.java, 36</a>]      <a href="dictionary_C.html#5291">com.mycompany.cucumber.test.loginContext.masukkan_password_pada_field_password</a>
+    Use   [<a href="5275.html#31">loginContext.java, 31</a>]      <a href="dictionary_C.html#5294">com.mycompany.cucumber.test.loginContext.masukkan_username_pada_field_username</a>
+
+<a href="dictionary_C.html#5293">com.mycompany.cucumber.test.loginContext.masukkan_password_pada_field_password.arg1</a><a name="5293"> </a>   (Parameter)  Declared as: String
+    Define   [<a href="5275.html#35">loginContext.java, 35</a>]   <a href="dictionary_C.html#5291">com.mycompany.cucumber.test.loginContext.masukkan_password_pada_field_password</a>
+    Use   [<a href="5275.html#36">loginContext.java, 36</a>]      <a href="dictionary_C.html#5291">com.mycompany.cucumber.test.loginContext.masukkan_password_pada_field_password</a>
+
+<a href="dictionary_C.html#5295">com.mycompany.cucumber.test.loginContext.masukkan_username_pada_field_username.arg1</a><a name="5295"> </a>   (Parameter)  Declared as: String
+    Define   [<a href="5275.html#30">loginContext.java, 30</a>]   <a href="dictionary_C.html#5294">com.mycompany.cucumber.test.loginContext.masukkan_username_pada_field_username</a>
+    Use   [<a href="5275.html#31">loginContext.java, 31</a>]      <a href="dictionary_C.html#5294">com.mycompany.cucumber.test.loginContext.masukkan_username_pada_field_username</a>
+
+<a href="dictionary_C.html#23070">com.mycompany.cucumber.test.logoutContext.driver</a><a name="23070"> </a>   (Variable)  Declared as: WebDriver=FirefoxDriver()
+    Define   [<a href="23063.html#22">logoutContext.java, 22</a>]   <a href="dictionary_C.html#23065">com.mycompany.cucumber.test.logoutContext</a>
+    Set   [<a href="23063.html#22">logoutContext.java, 22</a>]     <a href="dictionary_C.html#23065">com.mycompany.cucumber.test.logoutContext</a>
+    Use   [<a href="23063.html#39">logoutContext.java, 39</a>]     <a href="dictionary_C.html#23066">com.mycompany.cucumber.test.logoutContext.akan_keluar_dari_website</a>
+    Use   [<a href="23063.html#26">logoutContext.java, 26</a>]     <a href="dictionary_C.html#23068">com.mycompany.cucumber.test.logoutContext.berada_di_dalam_website_perpustakaan</a>
+    Use   [<a href="23063.html#27">logoutContext.java, 27</a>]     <a href="dictionary_C.html#23068">com.mycompany.cucumber.test.logoutContext.berada_di_dalam_website_perpustakaan</a>
+    Use   [<a href="23063.html#28">logoutContext.java, 28</a>]     <a href="dictionary_C.html#23068">com.mycompany.cucumber.test.logoutContext.berada_di_dalam_website_perpustakaan</a>
+    Use   [<a href="23063.html#29">logoutContext.java, 29</a>]     <a href="dictionary_C.html#23068">com.mycompany.cucumber.test.logoutContext.berada_di_dalam_website_perpustakaan</a>
+    Use   [<a href="23063.html#34">logoutContext.java, 34</a>]     <a href="dictionary_C.html#23069">com.mycompany.cucumber.test.logoutContext.di_klik_tombol_logout</a>
+
+<a href="dictionary_C.html#30">com.mycompany.data.AnggotaDao.anggotaRepository</a><a name="30"> </a>   (Private Variable)  Declared as: AnggotaRepository
+    Define   [<a href="1.html#18">AnggotaDao.java, 18</a>]     <a href="dictionary_C.html#2">com.mycompany.data.AnggotaDao</a>
+    Use   [<a href="1.html#61">AnggotaDao.java, 61</a>]        <a href="dictionary_C.html#19">com.mycompany.data.AnggotaDao.listAnggotabyId</a>
+    Set   [<a href="1.html#27">AnggotaDao.java, 27</a>]        <a href="dictionary_C.html#26">com.mycompany.data.AnggotaDao.setAnggotaRepository</a>
+
+<a href="dictionary_C.html#10">com.mycompany.data.AnggotaDao.deleteAnggota.em</a><a name="10"> </a>   (Variable)  Declared as: EntityManager=emf.createEntityManager
+    Define   [<a href="1.html#53">AnggotaDao.java, 53</a>]     <a href="dictionary_C.html#3">com.mycompany.data.AnggotaDao.deleteAnggota</a>
+    Set   [<a href="1.html#53">AnggotaDao.java, 53</a>]        <a href="dictionary_C.html#3">com.mycompany.data.AnggotaDao.deleteAnggota</a>
+    Use   [<a href="1.html#54">AnggotaDao.java, 54</a>]        <a href="dictionary_C.html#3">com.mycompany.data.AnggotaDao.deleteAnggota</a>
+    Use   [<a href="1.html#55">AnggotaDao.java, 55</a>]        <a href="dictionary_C.html#3">com.mycompany.data.AnggotaDao.deleteAnggota</a>
+    Use   [<a href="1.html#55">AnggotaDao.java, 55</a>]        <a href="dictionary_C.html#3">com.mycompany.data.AnggotaDao.deleteAnggota</a>
+    Use   [<a href="1.html#56">AnggotaDao.java, 56</a>]        <a href="dictionary_C.html#3">com.mycompany.data.AnggotaDao.deleteAnggota</a>
+
+<a href="dictionary_C.html#11">com.mycompany.data.AnggotaDao.deleteAnggota.id</a><a name="11"> </a>   (Parameter)  Declared as: Integer
+    Define   [<a href="1.html#52">AnggotaDao.java, 52</a>]     <a href="dictionary_C.html#3">com.mycompany.data.AnggotaDao.deleteAnggota</a>
+    Use   [<a href="1.html#55">AnggotaDao.java, 55</a>]        <a href="dictionary_C.html#3">com.mycompany.data.AnggotaDao.deleteAnggota</a>
+
+<a href="dictionary_C.html#31">com.mycompany.data.AnggotaDao.emf</a><a name="31"> </a>   (Private Variable)  Declared as: EntityManagerFactory
+    Define   [<a href="1.html#17">AnggotaDao.java, 17</a>]     <a href="dictionary_C.html#2">com.mycompany.data.AnggotaDao</a>
+    Use   [<a href="1.html#53">AnggotaDao.java, 53</a>]        <a href="dictionary_C.html#3">com.mycompany.data.AnggotaDao.deleteAnggota</a>
+    Use   [<a href="1.html#47">AnggotaDao.java, 47</a>]        <a href="dictionary_C.html#12">com.mycompany.data.AnggotaDao.getIdAnggota</a>
+    Use   [<a href="1.html#32">AnggotaDao.java, 32</a>]        <a href="dictionary_C.html#15">com.mycompany.data.AnggotaDao.listAnggota</a>
+    Use   [<a href="1.html#38">AnggotaDao.java, 38</a>]        <a href="dictionary_C.html#21">com.mycompany.data.AnggotaDao.saveAnggota</a>
+    Set   [<a href="1.html#22">AnggotaDao.java, 22</a>]        <a href="dictionary_C.html#28">com.mycompany.data.AnggotaDao.setEmf</a>
+
+<a href="dictionary_C.html#13">com.mycompany.data.AnggotaDao.getIdAnggota.em</a><a name="13"> </a>   (Variable)  Declared as: EntityManager=emf.createEntityManager
+    Define   [<a href="1.html#47">AnggotaDao.java, 47</a>]     <a href="dictionary_C.html#12">com.mycompany.data.AnggotaDao.getIdAnggota</a>
+    Set   [<a href="1.html#47">AnggotaDao.java, 47</a>]        <a href="dictionary_C.html#12">com.mycompany.data.AnggotaDao.getIdAnggota</a>
+    Use   [<a href="1.html#48">AnggotaDao.java, 48</a>]        <a href="dictionary_C.html#12">com.mycompany.data.AnggotaDao.getIdAnggota</a>
+
+<a href="dictionary_C.html#14">com.mycompany.data.AnggotaDao.getIdAnggota.id</a><a name="14"> </a>   (Parameter)  Declared as: Integer
+    Define   [<a href="1.html#46">AnggotaDao.java, 46</a>]     <a href="dictionary_C.html#12">com.mycompany.data.AnggotaDao.getIdAnggota</a>
+    Use   [<a href="1.html#48">AnggotaDao.java, 48</a>]        <a href="dictionary_C.html#12">com.mycompany.data.AnggotaDao.getIdAnggota</a>
+
+<a href="dictionary_C.html#18">com.mycompany.data.AnggotaDao.listAnggota.em</a><a name="18"> </a>   (Variable)  Declared as: EntityManager=emf.createEntityManager
+    Define   [<a href="1.html#32">AnggotaDao.java, 32</a>]     <a href="dictionary_C.html#15">com.mycompany.data.AnggotaDao.listAnggota</a>
+    Set   [<a href="1.html#32">AnggotaDao.java, 32</a>]        <a href="dictionary_C.html#15">com.mycompany.data.AnggotaDao.listAnggota</a>
+    Use   [<a href="1.html#33">AnggotaDao.java, 33</a>]        <a href="dictionary_C.html#15">com.mycompany.data.AnggotaDao.listAnggota</a>
+
+<a href="dictionary_C.html#20">com.mycompany.data.AnggotaDao.listAnggotabyId.id</a><a name="20"> </a>   (Parameter)  Declared as: Integer
+    Define   [<a href="1.html#60">AnggotaDao.java, 60</a>]     <a href="dictionary_C.html#19">com.mycompany.data.AnggotaDao.listAnggotabyId</a>
+    Use   [<a href="1.html#61">AnggotaDao.java, 61</a>]        <a href="dictionary_C.html#19">com.mycompany.data.AnggotaDao.listAnggotabyId</a>
+
+<a href="dictionary_C.html#23">com.mycompany.data.AnggotaDao.saveAnggota.anggota</a><a name="23"> </a>   (Parameter)  Declared as: Anggota
+    Define   [<a href="1.html#37">AnggotaDao.java, 37</a>]     <a href="dictionary_C.html#21">com.mycompany.data.AnggotaDao.saveAnggota</a>
+    Use   [<a href="1.html#40">AnggotaDao.java, 40</a>]        <a href="dictionary_C.html#21">com.mycompany.data.AnggotaDao.saveAnggota</a>
+
+<a href="dictionary_C.html#24">com.mycompany.data.AnggotaDao.saveAnggota.em</a><a name="24"> </a>   (Variable)  Declared as: EntityManager=emf.createEntityManager
+    Define   [<a href="1.html#38">AnggotaDao.java, 38</a>]     <a href="dictionary_C.html#21">com.mycompany.data.AnggotaDao.saveAnggota</a>
+    Set   [<a href="1.html#38">AnggotaDao.java, 38</a>]        <a href="dictionary_C.html#21">com.mycompany.data.AnggotaDao.saveAnggota</a>
+    Use   [<a href="1.html#39">AnggotaDao.java, 39</a>]        <a href="dictionary_C.html#21">com.mycompany.data.AnggotaDao.saveAnggota</a>
+    Use   [<a href="1.html#40">AnggotaDao.java, 40</a>]        <a href="dictionary_C.html#21">com.mycompany.data.AnggotaDao.saveAnggota</a>
+    Use   [<a href="1.html#41">AnggotaDao.java, 41</a>]        <a href="dictionary_C.html#21">com.mycompany.data.AnggotaDao.saveAnggota</a>
+
+<a href="dictionary_C.html#25">com.mycompany.data.AnggotaDao.saveAnggota.saved</a><a name="25"> </a>   (Variable)  Declared as: Anggota=em.merge
+    Define   [<a href="1.html#40">AnggotaDao.java, 40</a>]     <a href="dictionary_C.html#21">com.mycompany.data.AnggotaDao.saveAnggota</a>
+    Set   [<a href="1.html#40">AnggotaDao.java, 40</a>]        <a href="dictionary_C.html#21">com.mycompany.data.AnggotaDao.saveAnggota</a>
+    Use   [<a href="1.html#42">AnggotaDao.java, 42</a>]        <a href="dictionary_C.html#21">com.mycompany.data.AnggotaDao.saveAnggota</a>
+
+<a href="dictionary_C.html#27">com.mycompany.data.AnggotaDao.setAnggotaRepository.anggotaRepository</a><a name="27"> </a>   (Parameter)  Declared as: AnggotaRepository
+    Define   [<a href="1.html#26">AnggotaDao.java, 26</a>]     <a href="dictionary_C.html#26">com.mycompany.data.AnggotaDao.setAnggotaRepository</a>
+    Use   [<a href="1.html#27">AnggotaDao.java, 27</a>]        <a href="dictionary_C.html#26">com.mycompany.data.AnggotaDao.setAnggotaRepository</a>
+
+<a href="dictionary_C.html#29">com.mycompany.data.AnggotaDao.setEmf.emf</a><a name="29"> </a>   (Parameter)  Declared as: EntityManagerFactory
+    Define   [<a href="1.html#21">AnggotaDao.java, 21</a>]     <a href="dictionary_C.html#28">com.mycompany.data.AnggotaDao.setEmf</a>
+    Use   [<a href="1.html#22">AnggotaDao.java, 22</a>]        <a href="dictionary_C.html#28">com.mycompany.data.AnggotaDao.setEmf</a>
+
+<a href="dictionary_C.html#15961">com.mycompany.data.BukuDao.deleteBuku.em</a><a name="15961"> </a>   (Variable)  Declared as: EntityManager=entityMF.createEntityManager
+    Define   [<a href="15958.html#47">BukuDao.java, 47</a>]        <a href="dictionary_C.html#15960">com.mycompany.data.BukuDao.deleteBuku</a>
+    Set   [<a href="15958.html#47">BukuDao.java, 47</a>]           <a href="dictionary_C.html#15960">com.mycompany.data.BukuDao.deleteBuku</a>
+    Use   [<a href="15958.html#48">BukuDao.java, 48</a>]           <a href="dictionary_C.html#15960">com.mycompany.data.BukuDao.deleteBuku</a>
+    Use   [<a href="15958.html#49">BukuDao.java, 49</a>]           <a href="dictionary_C.html#15960">com.mycompany.data.BukuDao.deleteBuku</a>
+    Use   [<a href="15958.html#49">BukuDao.java, 49</a>]           <a href="dictionary_C.html#15960">com.mycompany.data.BukuDao.deleteBuku</a>
+    Use   [<a href="15958.html#50">BukuDao.java, 50</a>]           <a href="dictionary_C.html#15960">com.mycompany.data.BukuDao.deleteBuku</a>
+
+<a href="dictionary_C.html#15962">com.mycompany.data.BukuDao.deleteBuku.id_buku</a><a name="15962"> </a>   (Parameter)  Declared as: Integer
+    Define   [<a href="15958.html#46">BukuDao.java, 46</a>]        <a href="dictionary_C.html#15960">com.mycompany.data.BukuDao.deleteBuku</a>
+    Use   [<a href="15958.html#49">BukuDao.java, 49</a>]           <a href="dictionary_C.html#15960">com.mycompany.data.BukuDao.deleteBuku</a>
+
+<a href="dictionary_C.html#15974">com.mycompany.data.BukuDao.entityMF</a><a name="15974"> </a>   (Private Variable)  Declared as: EntityManagerFactory
+    Define   [<a href="15958.html#17">BukuDao.java, 17</a>]        <a href="dictionary_C.html#15959">com.mycompany.data.BukuDao</a>
+    Use   [<a href="15958.html#47">BukuDao.java, 47</a>]           <a href="dictionary_C.html#15960">com.mycompany.data.BukuDao.deleteBuku</a>
+    Use   [<a href="15958.html#41">BukuDao.java, 41</a>]           <a href="dictionary_C.html#15963">com.mycompany.data.BukuDao.getIdBuku</a>
+    Use   [<a href="15958.html#26">BukuDao.java, 26</a>]           <a href="dictionary_C.html#15966">com.mycompany.data.BukuDao.listBuku</a>
+    Set   [<a href="15958.html#21">BukuDao.java, 21</a>]           <a href="dictionary_C.html#15968">com.mycompany.data.BukuDao.setE</a>
+    Use   [<a href="15958.html#32">BukuDao.java, 32</a>]           <a href="dictionary_C.html#15970">com.mycompany.data.BukuDao.simpanBuku</a>
+
+<a href="dictionary_C.html#15964">com.mycompany.data.BukuDao.getIdBuku.em</a><a name="15964"> </a>   (Variable)  Declared as: EntityManager=entityMF.createEntityManager
+    Define   [<a href="15958.html#41">BukuDao.java, 41</a>]        <a href="dictionary_C.html#15963">com.mycompany.data.BukuDao.getIdBuku</a>
+    Set   [<a href="15958.html#41">BukuDao.java, 41</a>]           <a href="dictionary_C.html#15963">com.mycompany.data.BukuDao.getIdBuku</a>
+    Use   [<a href="15958.html#42">BukuDao.java, 42</a>]           <a href="dictionary_C.html#15963">com.mycompany.data.BukuDao.getIdBuku</a>
+
+<a href="dictionary_C.html#15965">com.mycompany.data.BukuDao.getIdBuku.id_buku</a><a name="15965"> </a>   (Parameter)  Declared as: Integer
+    Define   [<a href="15958.html#40">BukuDao.java, 40</a>]        <a href="dictionary_C.html#15963">com.mycompany.data.BukuDao.getIdBuku</a>
+    Use   [<a href="15958.html#42">BukuDao.java, 42</a>]           <a href="dictionary_C.html#15963">com.mycompany.data.BukuDao.getIdBuku</a>
+
+<a href="dictionary_C.html#15967">com.mycompany.data.BukuDao.listBuku.em</a><a name="15967"> </a>   (Variable)  Declared as: EntityManager=entityMF.createEntityManager
+    Define   [<a href="15958.html#26">BukuDao.java, 26</a>]        <a href="dictionary_C.html#15966">com.mycompany.data.BukuDao.listBuku</a>
+    Set   [<a href="15958.html#26">BukuDao.java, 26</a>]           <a href="dictionary_C.html#15966">com.mycompany.data.BukuDao.listBuku</a>
+    Use   [<a href="15958.html#27">BukuDao.java, 27</a>]           <a href="dictionary_C.html#15966">com.mycompany.data.BukuDao.listBuku</a>
+
+<a href="dictionary_C.html#15969">com.mycompany.data.BukuDao.setE.emf</a><a name="15969"> </a>   (Parameter)  Declared as: EntityManagerFactory
+    Define   [<a href="15958.html#20">BukuDao.java, 20</a>]        <a href="dictionary_C.html#15968">com.mycompany.data.BukuDao.setE</a>
+    Use   [<a href="15958.html#21">BukuDao.java, 21</a>]           <a href="dictionary_C.html#15968">com.mycompany.data.BukuDao.setE</a>
+
+<a href="dictionary_C.html#15971">com.mycompany.data.BukuDao.simpanBuku.buku</a><a name="15971"> </a>   (Parameter)  Declared as: Buku
+    Define   [<a href="15958.html#31">BukuDao.java, 31</a>]        <a href="dictionary_C.html#15970">com.mycompany.data.BukuDao.simpanBuku</a>
+    Use   [<a href="15958.html#34">BukuDao.java, 34</a>]           <a href="dictionary_C.html#15970">com.mycompany.data.BukuDao.simpanBuku</a>
+
+<a href="dictionary_C.html#15972">com.mycompany.data.BukuDao.simpanBuku.em</a><a name="15972"> </a>   (Variable)  Declared as: EntityManager=entityMF.createEntityManager
+    Define   [<a href="15958.html#32">BukuDao.java, 32</a>]        <a href="dictionary_C.html#15970">com.mycompany.data.BukuDao.simpanBuku</a>
+    Set   [<a href="15958.html#32">BukuDao.java, 32</a>]           <a href="dictionary_C.html#15970">com.mycompany.data.BukuDao.simpanBuku</a>
+    Use   [<a href="15958.html#33">BukuDao.java, 33</a>]           <a href="dictionary_C.html#15970">com.mycompany.data.BukuDao.simpanBuku</a>
+    Use   [<a href="15958.html#34">BukuDao.java, 34</a>]           <a href="dictionary_C.html#15970">com.mycompany.data.BukuDao.simpanBuku</a>
+    Use   [<a href="15958.html#35">BukuDao.java, 35</a>]           <a href="dictionary_C.html#15970">com.mycompany.data.BukuDao.simpanBuku</a>
+
+<a href="dictionary_C.html#15973">com.mycompany.data.BukuDao.simpanBuku.saved</a><a name="15973"> </a>   (Variable)  Declared as: Buku=em.merge
+    Define   [<a href="15958.html#34">BukuDao.java, 34</a>]        <a href="dictionary_C.html#15970">com.mycompany.data.BukuDao.simpanBuku</a>
+    Set   [<a href="15958.html#34">BukuDao.java, 34</a>]           <a href="dictionary_C.html#15970">com.mycompany.data.BukuDao.simpanBuku</a>
+    Use   [<a href="15958.html#36">BukuDao.java, 36</a>]           <a href="dictionary_C.html#15970">com.mycompany.data.BukuDao.simpanBuku</a>
+
+<a href="dictionary_C.html#14685">com.mycompany.data.PeminjamanDao.deletePeminjaman.emf</a><a name="14685"> </a>   (Variable)  Declared as: EntityManager=eMF.createEntityManager
+    Define   [<a href="14682.html#44">PeminjamanDao.java, 44</a>]   <a href="dictionary_C.html#14684">com.mycompany.data.PeminjamanDao.deletePeminjaman</a>
+    Set   [<a href="14682.html#44">PeminjamanDao.java, 44</a>]     <a href="dictionary_C.html#14684">com.mycompany.data.PeminjamanDao.deletePeminjaman</a>
+    Use   [<a href="14682.html#45">PeminjamanDao.java, 45</a>]     <a href="dictionary_C.html#14684">com.mycompany.data.PeminjamanDao.deletePeminjaman</a>
+    Use   [<a href="14682.html#46">PeminjamanDao.java, 46</a>]     <a href="dictionary_C.html#14684">com.mycompany.data.PeminjamanDao.deletePeminjaman</a>
+    Use   [<a href="14682.html#46">PeminjamanDao.java, 46</a>]     <a href="dictionary_C.html#14684">com.mycompany.data.PeminjamanDao.deletePeminjaman</a>
+    Use   [<a href="14682.html#47">PeminjamanDao.java, 47</a>]     <a href="dictionary_C.html#14684">com.mycompany.data.PeminjamanDao.deletePeminjaman</a>
+
+<a href="dictionary_C.html#14686">com.mycompany.data.PeminjamanDao.deletePeminjaman.id_pinjam</a><a name="14686"> </a>   (Parameter)  Declared as: Integer
+    Define   [<a href="14682.html#43">PeminjamanDao.java, 43</a>]   <a href="dictionary_C.html#14684">com.mycompany.data.PeminjamanDao.deletePeminjaman</a>
+    Use   [<a href="14682.html#46">PeminjamanDao.java, 46</a>]     <a href="dictionary_C.html#14684">com.mycompany.data.PeminjamanDao.deletePeminjaman</a>
+
+<a href="dictionary_C.html#14698">com.mycompany.data.PeminjamanDao.eMF</a><a name="14698"> </a>   (Private Variable)  Declared as: EntityManagerFactory
+    Define   [<a href="14682.html#14">PeminjamanDao.java, 14</a>]   <a href="dictionary_C.html#14683">com.mycompany.data.PeminjamanDao</a>
+    Use   [<a href="14682.html#44">PeminjamanDao.java, 44</a>]     <a href="dictionary_C.html#14684">com.mycompany.data.PeminjamanDao.deletePeminjaman</a>
+    Use   [<a href="14682.html#38">PeminjamanDao.java, 38</a>]     <a href="dictionary_C.html#14687">com.mycompany.data.PeminjamanDao.getIdPeminjaman</a>
+    Use   [<a href="14682.html#23">PeminjamanDao.java, 23</a>]     <a href="dictionary_C.html#14690">com.mycompany.data.PeminjamanDao.listPeminjaman</a>
+    Use   [<a href="14682.html#29">PeminjamanDao.java, 29</a>]     <a href="dictionary_C.html#14692">com.mycompany.data.PeminjamanDao.savePeminjaman</a>
+    Set   [<a href="14682.html#18">PeminjamanDao.java, 18</a>]     <a href="dictionary_C.html#14696">com.mycompany.data.PeminjamanDao.setE</a>
+
+<a href="dictionary_C.html#14688">com.mycompany.data.PeminjamanDao.getIdPeminjaman.em</a><a name="14688"> </a>   (Variable)  Declared as: EntityManager=eMF.createEntityManager
+    Define   [<a href="14682.html#38">PeminjamanDao.java, 38</a>]   <a href="dictionary_C.html#14687">com.mycompany.data.PeminjamanDao.getIdPeminjaman</a>
+    Set   [<a href="14682.html#38">PeminjamanDao.java, 38</a>]     <a href="dictionary_C.html#14687">com.mycompany.data.PeminjamanDao.getIdPeminjaman</a>
+    Use   [<a href="14682.html#39">PeminjamanDao.java, 39</a>]     <a href="dictionary_C.html#14687">com.mycompany.data.PeminjamanDao.getIdPeminjaman</a>
+
+<a href="dictionary_C.html#14689">com.mycompany.data.PeminjamanDao.getIdPeminjaman.id_pinjam</a><a name="14689"> </a>   (Parameter)  Declared as: Integer
+    Define   [<a href="14682.html#37">PeminjamanDao.java, 37</a>]   <a href="dictionary_C.html#14687">com.mycompany.data.PeminjamanDao.getIdPeminjaman</a>
+    Use   [<a href="14682.html#39">PeminjamanDao.java, 39</a>]     <a href="dictionary_C.html#14687">com.mycompany.data.PeminjamanDao.getIdPeminjaman</a>
+
+<a href="dictionary_C.html#14691">com.mycompany.data.PeminjamanDao.listPeminjaman.em</a><a name="14691"> </a>   (Variable)  Declared as: EntityManager=eMF.createEntityManager
+    Define   [<a href="14682.html#23">PeminjamanDao.java, 23</a>]   <a href="dictionary_C.html#14690">com.mycompany.data.PeminjamanDao.listPeminjaman</a>
+    Set   [<a href="14682.html#23">PeminjamanDao.java, 23</a>]     <a href="dictionary_C.html#14690">com.mycompany.data.PeminjamanDao.listPeminjaman</a>
+    Use   [<a href="14682.html#24">PeminjamanDao.java, 24</a>]     <a href="dictionary_C.html#14690">com.mycompany.data.PeminjamanDao.listPeminjaman</a>
+
+<a href="dictionary_C.html#14693">com.mycompany.data.PeminjamanDao.savePeminjaman.em</a><a name="14693"> </a>   (Variable)  Declared as: EntityManager=eMF.createEntityManager
+    Define   [<a href="14682.html#29">PeminjamanDao.java, 29</a>]   <a href="dictionary_C.html#14692">com.mycompany.data.PeminjamanDao.savePeminjaman</a>
+    Set   [<a href="14682.html#29">PeminjamanDao.java, 29</a>]     <a href="dictionary_C.html#14692">com.mycompany.data.PeminjamanDao.savePeminjaman</a>
+    Use   [<a href="14682.html#30">PeminjamanDao.java, 30</a>]     <a href="dictionary_C.html#14692">com.mycompany.data.PeminjamanDao.savePeminjaman</a>
+    Use   [<a href="14682.html#31">PeminjamanDao.java, 31</a>]     <a href="dictionary_C.html#14692">com.mycompany.data.PeminjamanDao.savePeminjaman</a>
+    Use   [<a href="14682.html#32">PeminjamanDao.java, 32</a>]     <a href="dictionary_C.html#14692">com.mycompany.data.PeminjamanDao.savePeminjaman</a>
+
+<a href="dictionary_C.html#14694">com.mycompany.data.PeminjamanDao.savePeminjaman.peminjaman</a><a name="14694"> </a>   (Parameter)  Declared as: Peminjaman
+    Define   [<a href="14682.html#28">PeminjamanDao.java, 28</a>]   <a href="dictionary_C.html#14692">com.mycompany.data.PeminjamanDao.savePeminjaman</a>
+    Use   [<a href="14682.html#31">PeminjamanDao.java, 31</a>]     <a href="dictionary_C.html#14692">com.mycompany.data.PeminjamanDao.savePeminjaman</a>
+
+<a href="dictionary_C.html#14695">com.mycompany.data.PeminjamanDao.savePeminjaman.saved</a><a name="14695"> </a>   (Variable)  Declared as: Peminjaman=em.merge
+    Define   [<a href="14682.html#31">PeminjamanDao.java, 31</a>]   <a href="dictionary_C.html#14692">com.mycompany.data.PeminjamanDao.savePeminjaman</a>
+    Set   [<a href="14682.html#31">PeminjamanDao.java, 31</a>]     <a href="dictionary_C.html#14692">com.mycompany.data.PeminjamanDao.savePeminjaman</a>
+    Use   [<a href="14682.html#33">PeminjamanDao.java, 33</a>]     <a href="dictionary_C.html#14692">com.mycompany.data.PeminjamanDao.savePeminjaman</a>
+
+<a href="dictionary_C.html#14697">com.mycompany.data.PeminjamanDao.setE.emf</a><a name="14697"> </a>   (Parameter)  Declared as: EntityManagerFactory
+    Define   [<a href="14682.html#17">PeminjamanDao.java, 17</a>]   <a href="dictionary_C.html#14696">com.mycompany.data.PeminjamanDao.setE</a>
+    Use   [<a href="14682.html#18">PeminjamanDao.java, 18</a>]     <a href="dictionary_C.html#14696">com.mycompany.data.PeminjamanDao.setE</a>
+
+<a href="dictionary_C.html#12992">com.mycompany.model.Anggota.email</a><a name="12992"> </a>   (Private Variable)  Declared as: String
+    Define   [<a href="12973.html#19">Anggota.java, 19</a>]        <a href="dictionary_C.html#43">com.mycompany.model.Anggota</a>
+    Use   [<a href="12973.html#59">Anggota.java, 59</a>]           <a href="dictionary_C.html#12974">com.mycompany.model.Anggota.getEmail</a>
+    Set   [<a href="12973.html#63">Anggota.java, 63</a>]           <a href="dictionary_C.html#12980">com.mycompany.model.Anggota.setEmail</a>
+
+<a href="dictionary_C.html#12993">com.mycompany.model.Anggota.id</a><a name="12993"> </a>   (Private Variable)  Declared as: Integer
+    Define   [<a href="12973.html#10">Anggota.java, 10</a>]        <a href="dictionary_C.html#43">com.mycompany.model.Anggota</a>
+    Use   [<a href="12973.html#37">Anggota.java, 37</a>]           <a href="dictionary_C.html#12975">com.mycompany.model.Anggota.getId</a>
+    Set   [<a href="12973.html#40">Anggota.java, 40</a>]           <a href="dictionary_C.html#12982">com.mycompany.model.Anggota.setId</a>
+
+<a href="dictionary_C.html#12994">com.mycompany.model.Anggota.nama</a><a name="12994"> </a>   (Private Variable)  Declared as: String
+    Define   [<a href="12973.html#13">Anggota.java, 13</a>]        <a href="dictionary_C.html#43">com.mycompany.model.Anggota</a>
+    Use   [<a href="12973.html#43">Anggota.java, 43</a>]           <a href="dictionary_C.html#12976">com.mycompany.model.Anggota.getNama</a>
+    Set   [<a href="12973.html#47">Anggota.java, 47</a>]           <a href="dictionary_C.html#12984">com.mycompany.model.Anggota.setNama</a>
+
+<a href="dictionary_C.html#12995">com.mycompany.model.Anggota.nomor_telepon</a><a name="12995"> </a>   (Private Variable)  Declared as: String
+    Define   [<a href="12973.html#16">Anggota.java, 16</a>]        <a href="dictionary_C.html#43">com.mycompany.model.Anggota</a>
+    Use   [<a href="12973.html#51">Anggota.java, 51</a>]           <a href="dictionary_C.html#12977">com.mycompany.model.Anggota.getNomor_telepon</a>
+    Set   [<a href="12973.html#55">Anggota.java, 55</a>]           <a href="dictionary_C.html#12986">com.mycompany.model.Anggota.setNomor_telepon</a>
+
+<a href="dictionary_C.html#12981">com.mycompany.model.Anggota.setEmail.email</a><a name="12981"> </a>   (Parameter)  Declared as: String
+    Define   [<a href="12973.html#62">Anggota.java, 62</a>]        <a href="dictionary_C.html#12980">com.mycompany.model.Anggota.setEmail</a>
+    Use   [<a href="12973.html#63">Anggota.java, 63</a>]           <a href="dictionary_C.html#12980">com.mycompany.model.Anggota.setEmail</a>
+
+<a href="dictionary_C.html#12983">com.mycompany.model.Anggota.setId.id</a><a name="12983"> </a>   (Parameter)  Declared as: Integer
+    Define   [<a href="12973.html#40">Anggota.java, 40</a>]        <a href="dictionary_C.html#12982">com.mycompany.model.Anggota.setId</a>
+    Use   [<a href="12973.html#40">Anggota.java, 40</a>]           <a href="dictionary_C.html#12982">com.mycompany.model.Anggota.setId</a>
+
+<a href="dictionary_C.html#12985">com.mycompany.model.Anggota.setNama.nama</a><a name="12985"> </a>   (Parameter)  Declared as: String
+    Define   [<a href="12973.html#46">Anggota.java, 46</a>]        <a href="dictionary_C.html#12984">com.mycompany.model.Anggota.setNama</a>
+    Use   [<a href="12973.html#47">Anggota.java, 47</a>]           <a href="dictionary_C.html#12984">com.mycompany.model.Anggota.setNama</a>
+
+<a href="dictionary_C.html#12987">com.mycompany.model.Anggota.setNomor_telepon.nomor_telepon</a><a name="12987"> </a>   (Parameter)  Declared as: String
+    Define   [<a href="12973.html#54">Anggota.java, 54</a>]        <a href="dictionary_C.html#12986">com.mycompany.model.Anggota.setNomor_telepon</a>
+    Use   [<a href="12973.html#55">Anggota.java, 55</a>]           <a href="dictionary_C.html#12986">com.mycompany.model.Anggota.setNomor_telepon</a>
+
+<a href="dictionary_C.html#12989">com.mycompany.model.Anggota.setStatus.status</a><a name="12989"> </a>   (Parameter)  Declared as: String
+    Define   [<a href="12973.html#70">Anggota.java, 70</a>]        <a href="dictionary_C.html#12988">com.mycompany.model.Anggota.setStatus</a>
+    Use   [<a href="12973.html#71">Anggota.java, 71</a>]           <a href="dictionary_C.html#12988">com.mycompany.model.Anggota.setStatus</a>
+
+<a href="dictionary_C.html#12991">com.mycompany.model.Anggota.setVersion.version</a><a name="12991"> </a>   (Parameter)  Declared as: Integer
+    Define   [<a href="12973.html#32">Anggota.java, 32</a>]        <a href="dictionary_C.html#12990">com.mycompany.model.Anggota.setVersion</a>
+    Use   [<a href="12973.html#33">Anggota.java, 33</a>]           <a href="dictionary_C.html#12990">com.mycompany.model.Anggota.setVersion</a>
+
+<a href="dictionary_C.html#12996">com.mycompany.model.Anggota.status</a><a name="12996"> </a>   (Private Variable)  Declared as: String
+    Define   [<a href="12973.html#22">Anggota.java, 22</a>]        <a href="dictionary_C.html#43">com.mycompany.model.Anggota</a>
+    Use   [<a href="12973.html#67">Anggota.java, 67</a>]           <a href="dictionary_C.html#12978">com.mycompany.model.Anggota.getStatus</a>
+    Set   [<a href="12973.html#71">Anggota.java, 71</a>]           <a href="dictionary_C.html#12988">com.mycompany.model.Anggota.setStatus</a>
+
+<a href="dictionary_C.html#12997">com.mycompany.model.Anggota.version</a><a name="12997"> </a>   (Private Variable)  Declared as: Integer
+    Define   [<a href="12973.html#26">Anggota.java, 26</a>]        <a href="dictionary_C.html#43">com.mycompany.model.Anggota</a>
+    Use   [<a href="12973.html#29">Anggota.java, 29</a>]           <a href="dictionary_C.html#12979">com.mycompany.model.Anggota.getVersion</a>
+    Set   [<a href="12973.html#33">Anggota.java, 33</a>]           <a href="dictionary_C.html#12990">com.mycompany.model.Anggota.setVersion</a>
+
+<a href="dictionary_C.html#29724">com.mycompany.model.Buku.id_buku</a><a name="29724"> </a>   (Private Variable)  Declared as: Integer
+    Define   [<a href="29699.html#9">Buku.java, 9</a>]            <a href="dictionary_C.html#15977">com.mycompany.model.Buku</a>
+    Use   [<a href="29699.html#50">Buku.java, 50</a>]              <a href="dictionary_C.html#29700">com.mycompany.model.Buku.getId_buku</a>
+    Set   [<a href="29699.html#54">Buku.java, 54</a>]              <a href="dictionary_C.html#29708">com.mycompany.model.Buku.setId_buku</a>
+
+<a href="dictionary_C.html#29725">com.mycompany.model.Buku.judul</a><a name="29725"> </a>   (Private Variable)  Declared as: String
+    Define   [<a href="29699.html#12">Buku.java, 12</a>]           <a href="dictionary_C.html#15977">com.mycompany.model.Buku</a>
+    Use   [<a href="29699.html#58">Buku.java, 58</a>]              <a href="dictionary_C.html#29701">com.mycompany.model.Buku.getJudul</a>
+    Set   [<a href="29699.html#62">Buku.java, 62</a>]              <a href="dictionary_C.html#29710">com.mycompany.model.Buku.setJudul</a>
+
+<a href="dictionary_C.html#29726">com.mycompany.model.Buku.jumlah_buku</a><a name="29726"> </a>   (Private Variable)  Declared as: int
+    Define   [<a href="29699.html#27">Buku.java, 27</a>]           <a href="dictionary_C.html#15977">com.mycompany.model.Buku</a>
+    Use   [<a href="29699.html#90">Buku.java, 90</a>]              <a href="dictionary_C.html#29702">com.mycompany.model.Buku.getJumlah_buku</a>
+    Set   [<a href="29699.html#94">Buku.java, 94</a>]              <a href="dictionary_C.html#29712">com.mycompany.model.Buku.setJumlah_buku</a>
+
+<a href="dictionary_C.html#29727">com.mycompany.model.Buku.kategori</a><a name="29727"> </a>   (Private Variable)  Declared as: String
+    Define   [<a href="29699.html#24">Buku.java, 24</a>]           <a href="dictionary_C.html#15977">com.mycompany.model.Buku</a>
+    Use   [<a href="29699.html#34">Buku.java, 34</a>]              <a href="dictionary_C.html#29703">com.mycompany.model.Buku.getKategori</a>
+    Set   [<a href="29699.html#38">Buku.java, 38</a>]              <a href="dictionary_C.html#29714">com.mycompany.model.Buku.setKategori</a>
+
+<a href="dictionary_C.html#29728">com.mycompany.model.Buku.penerbit</a><a name="29728"> </a>   (Private Variable)  Declared as: String
+    Define   [<a href="29699.html#18">Buku.java, 18</a>]           <a href="dictionary_C.html#15977">com.mycompany.model.Buku</a>
+    Use   [<a href="29699.html#74">Buku.java, 74</a>]              <a href="dictionary_C.html#29704">com.mycompany.model.Buku.getPenerbit</a>
+    Set   [<a href="29699.html#78">Buku.java, 78</a>]              <a href="dictionary_C.html#29716">com.mycompany.model.Buku.setPenerbit</a>
+
+<a href="dictionary_C.html#29729">com.mycompany.model.Buku.pengarang</a><a name="29729"> </a>   (Private Variable)  Declared as: String
+    Define   [<a href="29699.html#15">Buku.java, 15</a>]           <a href="dictionary_C.html#15977">com.mycompany.model.Buku</a>
+    Use   [<a href="29699.html#66">Buku.java, 66</a>]              <a href="dictionary_C.html#29705">com.mycompany.model.Buku.getPengarang</a>
+    Set   [<a href="29699.html#70">Buku.java, 70</a>]              <a href="dictionary_C.html#29718">com.mycompany.model.Buku.setPengarang</a>
+
+<a href="dictionary_C.html#29709">com.mycompany.model.Buku.setId_buku.id_buku</a><a name="29709"> </a>   (Parameter)  Declared as: Integer
+    Define   [<a href="29699.html#53">Buku.java, 53</a>]           <a href="dictionary_C.html#29708">com.mycompany.model.Buku.setId_buku</a>
+    Use   [<a href="29699.html#54">Buku.java, 54</a>]              <a href="dictionary_C.html#29708">com.mycompany.model.Buku.setId_buku</a>
+
+<a href="dictionary_C.html#29711">com.mycompany.model.Buku.setJudul.judul</a><a name="29711"> </a>   (Parameter)  Declared as: String
+    Define   [<a href="29699.html#61">Buku.java, 61</a>]           <a href="dictionary_C.html#29710">com.mycompany.model.Buku.setJudul</a>
+    Use   [<a href="29699.html#62">Buku.java, 62</a>]              <a href="dictionary_C.html#29710">com.mycompany.model.Buku.setJudul</a>
+
+<a href="dictionary_C.html#29713">com.mycompany.model.Buku.setJumlah_buku.jumlah_buku</a><a name="29713"> </a>   (Parameter)  Declared as: int
+    Define   [<a href="29699.html#93">Buku.java, 93</a>]           <a href="dictionary_C.html#29712">com.mycompany.model.Buku.setJumlah_buku</a>
+    Use   [<a href="29699.html#94">Buku.java, 94</a>]              <a href="dictionary_C.html#29712">com.mycompany.model.Buku.setJumlah_buku</a>
+
+<a href="dictionary_C.html#29715">com.mycompany.model.Buku.setKategori.kategori</a><a name="29715"> </a>   (Parameter)  Declared as: String
+    Define   [<a href="29699.html#37">Buku.java, 37</a>]           <a href="dictionary_C.html#29714">com.mycompany.model.Buku.setKategori</a>
+    Use   [<a href="29699.html#38">Buku.java, 38</a>]              <a href="dictionary_C.html#29714">com.mycompany.model.Buku.setKategori</a>
+
+<a href="dictionary_C.html#29717">com.mycompany.model.Buku.setPenerbit.penerbit</a><a name="29717"> </a>   (Parameter)  Declared as: String
+    Define   [<a href="29699.html#77">Buku.java, 77</a>]           <a href="dictionary_C.html#29716">com.mycompany.model.Buku.setPenerbit</a>
+    Use   [<a href="29699.html#78">Buku.java, 78</a>]              <a href="dictionary_C.html#29716">com.mycompany.model.Buku.setPenerbit</a>
+
+<a href="dictionary_C.html#29719">com.mycompany.model.Buku.setPengarang.pengarang</a><a name="29719"> </a>   (Parameter)  Declared as: String
+    Define   [<a href="29699.html#69">Buku.java, 69</a>]           <a href="dictionary_C.html#29718">com.mycompany.model.Buku.setPengarang</a>
+    Use   [<a href="29699.html#70">Buku.java, 70</a>]              <a href="dictionary_C.html#29718">com.mycompany.model.Buku.setPengarang</a>
+
+<a href="dictionary_C.html#29721">com.mycompany.model.Buku.setTahun_terbit.tahun_terbit</a><a name="29721"> </a>   (Parameter)  Declared as: String
+    Define   [<a href="29699.html#85">Buku.java, 85</a>]           <a href="dictionary_C.html#29720">com.mycompany.model.Buku.setTahun_terbit</a>
+    Use   [<a href="29699.html#86">Buku.java, 86</a>]              <a href="dictionary_C.html#29720">com.mycompany.model.Buku.setTahun_terbit</a>
+
+<a href="dictionary_C.html#29723">com.mycompany.model.Buku.setVersion.version</a><a name="29723"> </a>   (Parameter)  Declared as: Integer
+    Define   [<a href="29699.html#45">Buku.java, 45</a>]           <a href="dictionary_C.html#29722">com.mycompany.model.Buku.setVersion</a>
+    Use   [<a href="29699.html#46">Buku.java, 46</a>]              <a href="dictionary_C.html#29722">com.mycompany.model.Buku.setVersion</a>
+
+<a href="dictionary_C.html#29730">com.mycompany.model.Buku.tahun_terbit</a><a name="29730"> </a>   (Private Variable)  Declared as: String
+    Define   [<a href="29699.html#21">Buku.java, 21</a>]           <a href="dictionary_C.html#15977">com.mycompany.model.Buku</a>
+    Use   [<a href="29699.html#82">Buku.java, 82</a>]              <a href="dictionary_C.html#29706">com.mycompany.model.Buku.getTahun_terbit</a>
+    Set   [<a href="29699.html#86">Buku.java, 86</a>]              <a href="dictionary_C.html#29720">com.mycompany.model.Buku.setTahun_terbit</a>
+
+<a href="dictionary_C.html#29731">com.mycompany.model.Buku.version</a><a name="29731"> </a>   (Private Variable)  Declared as: Integer
+    Define   [<a href="29699.html#31">Buku.java, 31</a>]           <a href="dictionary_C.html#15977">com.mycompany.model.Buku</a>
+    Use   [<a href="29699.html#42">Buku.java, 42</a>]              <a href="dictionary_C.html#29707">com.mycompany.model.Buku.getVersion</a>
+    Set   [<a href="29699.html#46">Buku.java, 46</a>]              <a href="dictionary_C.html#29722">com.mycompany.model.Buku.setVersion</a>
+
+<a href="dictionary_C.html#923">com.mycompany.model.Peminjaman.id_anggota</a><a name="923"> </a>   (Private Variable)  Declared as: Integer
+    Define   [<a href="896.html#13">Peminjaman.java, 13</a>]     <a href="dictionary_C.html#901">com.mycompany.model.Peminjaman</a>
+    Use   [<a href="896.html#48">Peminjaman.java, 48</a>]        <a href="dictionary_C.html#902">com.mycompany.model.Peminjaman.getId_anggota</a>
+    Set   [<a href="896.html#52">Peminjaman.java, 52</a>]        <a href="dictionary_C.html#909">com.mycompany.model.Peminjaman.setId_anggota</a>
+
+<a href="dictionary_C.html#924">com.mycompany.model.Peminjaman.id_buku</a><a name="924"> </a>   (Private Variable)  Declared as: Integer
+    Define   [<a href="896.html#16">Peminjaman.java, 16</a>]     <a href="dictionary_C.html#901">com.mycompany.model.Peminjaman</a>
+    Use   [<a href="896.html#56">Peminjaman.java, 56</a>]        <a href="dictionary_C.html#903">com.mycompany.model.Peminjaman.getId_buku</a>
+    Set   [<a href="896.html#60">Peminjaman.java, 60</a>]        <a href="dictionary_C.html#911">com.mycompany.model.Peminjaman.setId_buku</a>
+
+<a href="dictionary_C.html#925">com.mycompany.model.Peminjaman.id_pinjam</a><a name="925"> </a>   (Private Variable)  Declared as: Integer
+    Define   [<a href="896.html#10">Peminjaman.java, 10</a>]     <a href="dictionary_C.html#901">com.mycompany.model.Peminjaman</a>
+    Use   [<a href="896.html#40">Peminjaman.java, 40</a>]        <a href="dictionary_C.html#904">com.mycompany.model.Peminjaman.getId_pinjam</a>
+    Set   [<a href="896.html#44">Peminjaman.java, 44</a>]        <a href="dictionary_C.html#913">com.mycompany.model.Peminjaman.setId_pinjam</a>
+
+<a href="dictionary_C.html#910">com.mycompany.model.Peminjaman.setId_anggota.id_anggota</a><a name="910"> </a>   (Parameter)  Declared as: Integer
+    Define   [<a href="896.html#51">Peminjaman.java, 51</a>]     <a href="dictionary_C.html#909">com.mycompany.model.Peminjaman.setId_anggota</a>
+    Use   [<a href="896.html#52">Peminjaman.java, 52</a>]        <a href="dictionary_C.html#909">com.mycompany.model.Peminjaman.setId_anggota</a>
+
+<a href="dictionary_C.html#912">com.mycompany.model.Peminjaman.setId_buku.id_buku</a><a name="912"> </a>   (Parameter)  Declared as: Integer
+    Define   [<a href="896.html#59">Peminjaman.java, 59</a>]     <a href="dictionary_C.html#911">com.mycompany.model.Peminjaman.setId_buku</a>
+    Use   [<a href="896.html#60">Peminjaman.java, 60</a>]        <a href="dictionary_C.html#911">com.mycompany.model.Peminjaman.setId_buku</a>
+
+<a href="dictionary_C.html#914">com.mycompany.model.Peminjaman.setId_pinjam.id_pinjam</a><a name="914"> </a>   (Parameter)  Declared as: Integer
+    Define   [<a href="896.html#43">Peminjaman.java, 43</a>]     <a href="dictionary_C.html#913">com.mycompany.model.Peminjaman.setId_pinjam</a>
+    Use   [<a href="896.html#44">Peminjaman.java, 44</a>]        <a href="dictionary_C.html#913">com.mycompany.model.Peminjaman.setId_pinjam</a>
+
+<a href="dictionary_C.html#916">com.mycompany.model.Peminjaman.setStatus.status</a><a name="916"> </a>   (Parameter)  Declared as: String
+    Define   [<a href="896.html#83">Peminjaman.java, 83</a>]     <a href="dictionary_C.html#915">com.mycompany.model.Peminjaman.setStatus</a>
+    Use   [<a href="896.html#84">Peminjaman.java, 84</a>]        <a href="dictionary_C.html#915">com.mycompany.model.Peminjaman.setStatus</a>
+
+<a href="dictionary_C.html#918">com.mycompany.model.Peminjaman.setTanggal_kembali.tanggal_kembali</a><a name="918"> </a>   (Parameter)  Declared as: String
+    Define   [<a href="896.html#75">Peminjaman.java, 75</a>]     <a href="dictionary_C.html#917">com.mycompany.model.Peminjaman.setTanggal_kembali</a>
+    Use   [<a href="896.html#76">Peminjaman.java, 76</a>]        <a href="dictionary_C.html#917">com.mycompany.model.Peminjaman.setTanggal_kembali</a>
+
+<a href="dictionary_C.html#920">com.mycompany.model.Peminjaman.setTanggal_pinjam.tanggal_pinjam</a><a name="920"> </a>   (Parameter)  Declared as: String
+    Define   [<a href="896.html#67">Peminjaman.java, 67</a>]     <a href="dictionary_C.html#919">com.mycompany.model.Peminjaman.setTanggal_pinjam</a>
+    Use   [<a href="896.html#68">Peminjaman.java, 68</a>]        <a href="dictionary_C.html#919">com.mycompany.model.Peminjaman.setTanggal_pinjam</a>
+
+<a href="dictionary_C.html#922">com.mycompany.model.Peminjaman.setVersion.version</a><a name="922"> </a>   (Parameter)  Declared as: Integer
+    Define   [<a href="896.html#35">Peminjaman.java, 35</a>]     <a href="dictionary_C.html#921">com.mycompany.model.Peminjaman.setVersion</a>
+    Use   [<a href="896.html#36">Peminjaman.java, 36</a>]        <a href="dictionary_C.html#921">com.mycompany.model.Peminjaman.setVersion</a>
+
+<a href="dictionary_C.html#926">com.mycompany.model.Peminjaman.status</a><a name="926"> </a>   (Private Variable)  Declared as: String
+    Define   [<a href="896.html#25">Peminjaman.java, 25</a>]     <a href="dictionary_C.html#901">com.mycompany.model.Peminjaman</a>
+    Use   [<a href="896.html#80">Peminjaman.java, 80</a>]        <a href="dictionary_C.html#905">com.mycompany.model.Peminjaman.getStatus</a>
+    Set   [<a href="896.html#84">Peminjaman.java, 84</a>]        <a href="dictionary_C.html#915">com.mycompany.model.Peminjaman.setStatus</a>
+
+<a href="dictionary_C.html#927">com.mycompany.model.Peminjaman.tanggal_kembali</a><a name="927"> </a>   (Private Variable)  Declared as: String
+    Define   [<a href="896.html#22">Peminjaman.java, 22</a>]     <a href="dictionary_C.html#901">com.mycompany.model.Peminjaman</a>
+    Use   [<a href="896.html#72">Peminjaman.java, 72</a>]        <a href="dictionary_C.html#906">com.mycompany.model.Peminjaman.getTanggal_kembali</a>
+    Set   [<a href="896.html#76">Peminjaman.java, 76</a>]        <a href="dictionary_C.html#917">com.mycompany.model.Peminjaman.setTanggal_kembali</a>
+
+<a href="dictionary_C.html#928">com.mycompany.model.Peminjaman.tanggal_pinjam</a><a name="928"> </a>   (Private Variable)  Declared as: String
+    Define   [<a href="896.html#19">Peminjaman.java, 19</a>]     <a href="dictionary_C.html#901">com.mycompany.model.Peminjaman</a>
+    Use   [<a href="896.html#64">Peminjaman.java, 64</a>]        <a href="dictionary_C.html#907">com.mycompany.model.Peminjaman.getTanggal_pinjam</a>
+    Set   [<a href="896.html#68">Peminjaman.java, 68</a>]        <a href="dictionary_C.html#919">com.mycompany.model.Peminjaman.setTanggal_pinjam</a>
+
+<a href="dictionary_C.html#929">com.mycompany.model.Peminjaman.version</a><a name="929"> </a>   (Private Variable)  Declared as: Integer
+    Define   [<a href="896.html#29">Peminjaman.java, 29</a>]     <a href="dictionary_C.html#901">com.mycompany.model.Peminjaman</a>
+    Use   [<a href="896.html#32">Peminjaman.java, 32</a>]        <a href="dictionary_C.html#908">com.mycompany.model.Peminjaman.getVersion</a>
+    Set   [<a href="896.html#36">Peminjaman.java, 36</a>]        <a href="dictionary_C.html#921">com.mycompany.model.Peminjaman.setVersion</a>
+
+<a href="dictionary_C.html#979">com.mycompany.repository.AnggotaRepository.findById.id</a><a name="979"> </a>   (Parameter)  Declared as: Integer
+    Define   [<a href="978.html#7">AnggotaRepository.java, 7</a>]   <a href="dictionary_C.html#60">com.mycompany.repository.AnggotaRepository.findById</a>
+
+<a href="dictionary_C.html#9236">com.mycompany.service.AnggotaService.deleteAnggota.id</a><a name="9236"> </a>   (Parameter)  Declared as: Integer
+    Define   [<a href="9235.html#15">AnggotaService.java, 15</a>]   <a href="dictionary_C.html#56">com.mycompany.service.AnggotaService.deleteAnggota</a>
+
+<a href="dictionary_C.html#9237">com.mycompany.service.AnggotaService.getIdAnggota.id</a><a name="9237"> </a>   (Parameter)  Declared as: Integer
+    Define   [<a href="9235.html#13">AnggotaService.java, 13</a>]   <a href="dictionary_C.html#57">com.mycompany.service.AnggotaService.getIdAnggota</a>
+
+<a href="dictionary_C.html#9238">com.mycompany.service.AnggotaService.listAnggotabyId.id</a><a name="9238"> </a>   (Parameter)  Declared as: Integer
+    Define   [<a href="9235.html#17">AnggotaService.java, 17</a>]   <a href="dictionary_C.html#59">com.mycompany.service.AnggotaService.listAnggotabyId</a>
+
+<a href="dictionary_C.html#9239">com.mycompany.service.AnggotaService.saveAnggota.anggota</a><a name="9239"> </a>   (Parameter)  Declared as: Anggota
+    Define   [<a href="9235.html#11">AnggotaService.java, 11</a>]   <a href="dictionary_C.html#61">com.mycompany.service.AnggotaService.saveAnggota</a>
+
+<a href="dictionary_C.html#26699">com.mycompany.service.BukuService.deleteBuku.id_buku</a><a name="26699"> </a>   (Parameter)  Declared as: Integer
+    Define   [<a href="26698.html#15">BukuService.java, 15</a>]    <a href="dictionary_C.html#15978">com.mycompany.service.BukuService.deleteBuku</a>
+
+<a href="dictionary_C.html#26700">com.mycompany.service.BukuService.getIdBuku.id_buku</a><a name="26700"> </a>   (Parameter)  Declared as: Integer
+    Define   [<a href="26698.html#13">BukuService.java, 13</a>]    <a href="dictionary_C.html#15979">com.mycompany.service.BukuService.getIdBuku</a>
+
+<a href="dictionary_C.html#26701">com.mycompany.service.BukuService.simpanBuku.buku</a><a name="26701"> </a>   (Parameter)  Declared as: Buku
+    Define   [<a href="26698.html#11">BukuService.java, 11</a>]    <a href="dictionary_C.html#15981">com.mycompany.service.BukuService.simpanBuku</a>
+
+<a href="dictionary_C.html#19514">com.mycompany.service.PeminjamanService.deletePeminjaman.id_pinjam</a><a name="19514"> </a>   (Parameter)  Declared as: Integer
+    Define   [<a href="19513.html#14">PeminjamanService.java, 14</a>]   <a href="dictionary_C.html#14700">com.mycompany.service.PeminjamanService.deletePeminjaman</a>
+
+<a href="dictionary_C.html#19515">com.mycompany.service.PeminjamanService.getIdPeminjaman.id_pinjam</a><a name="19515"> </a>   (Parameter)  Declared as: Integer
+    Define   [<a href="19513.html#12">PeminjamanService.java, 12</a>]   <a href="dictionary_C.html#14701">com.mycompany.service.PeminjamanService.getIdPeminjaman</a>
+
+<a href="dictionary_C.html#19516">com.mycompany.service.PeminjamanService.savePeminjaman.peminjaman</a><a name="19516"> </a>   (Parameter)  Declared as: Peminjaman
+    Define   [<a href="19513.html#10">PeminjamanService.java, 10</a>]   <a href="dictionary_C.html#14703">com.mycompany.service.PeminjamanService.savePeminjaman</a>
+
+<a href="dictionary_C.html#26752">com.mycompany.SpringExampleApplication.main.args</a><a name="26752"> </a>   (Parameter)  Declared as: String[]
+    Define   [<a href="26746.html#9">SpringExampleApplication.java, 9</a>]   <a href="dictionary_C.html#26750">com.mycompany.SpringExampleApplication.main</a>
+    Use   [<a href="26746.html#10">SpringExampleApplication.java, 10</a>]   <a href="dictionary_C.html#26750">com.mycompany.SpringExampleApplication.main</a>
+</pre><hr>
+<table BORDER CELLPADDING=4><tr><td>Non-Alpha</td><td>A</td><td>B</td><td><a href="object_xref_C.html">C</a></td><td>D</td><td>E</td><td>F</td><td><a href="object_xref_G.html">G</a></td><td>H</td><td>I</td><td>J</td><td>K</td><td>L</td><td>M</td><td>N</td><td>O</td><td><a href="object_xref_P.html">P</a></td><td>Q</td><td>R</td><td>S</td><td>T</td><td>U</td><td>V</td><td>W</td><td>X</td><td>Y</td><td>Z</td></tr></table></body></html>
